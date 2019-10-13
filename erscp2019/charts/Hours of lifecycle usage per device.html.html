@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>pie-chart test | amCharts</title>
+		<meta name="description" content="chart created using amCharts live editor" />
+		
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
+		
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "pie",
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"gradientType": "linear",
+					"innerRadius": 55,
+					"labelRadius": 18,
+					"labelText": "[[title]]: [[litres]] hours",
+					"labelTickAlpha": 0,
+					"outlineColor": "#000000",
+					"tabIndex": 0,
+					"titleField": "country",
+					"valueField": "litres",
+					"color": "#282828",
+					"fontSize": 20,
+					"theme": "default",
+					"allLabels": [],
+					"balloon": {},
+					"titles": [],
+					"dataProvider": [
+						{
+							"country": "Hours drive 1",
+							"litres": "45000"
+						},
+						{
+							"country": "Hours drive 2",
+							"litres": "35000"
+						},
+						{
+							"country": "Hours drive 3",
+							"litres": "15000"
+						}
+					]
+				}
+			);
+		</script>
+	</head>
+	<body>
+		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+	</body>
+</html>

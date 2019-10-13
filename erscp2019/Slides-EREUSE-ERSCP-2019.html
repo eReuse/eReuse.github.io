@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="eReuse.org, Circular Consumption, Reuse, Electronic Devices" />
+    <meta name="description" content="What is circular consumption of electronics? Is it measurable? Can we set goals or compare with other consumers? A principle of circular economy is durability, prolonging the useful life of products. If we move the principle to the function of consumption, we would have that: circular consumption is to make the most of time resources by ensuring that in the end they are recycled, but never before time or prematurely, but only when they can no longer be used or reused by anyone else. In this article we propose a set of measures, metrics and progress indicators to measure the use of resources that consumers make in their use phase. With these metrics we can identify which consumers are the most circular; those who are able to use the same electronic devices for the longest time, either internally, or by collaborating with external agents so that these devices are reused and recycled properly. We have been able to validate usage performance metrics and premature recycling in the analysis of more than 3,000 desktop and laptop type electronic devices. These devices have been discarded by hundreds of organisations in 2018 and 2019. Finally, we propose the metrics of durability and obsolescence for models and brands of devices, which although it does not allow us to know the reasons for a low durability; absence or high cost of spare parts, difficulty of repair, etc., it does allow us to elaborate a ranking so that consumers can reward with their consumption choice, manufacturers who make products that reach high thresholds of durability." />
+    <title>Remark</title>	
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body {
+        font-family: 'Droid Serif';
+      }
+      h1, h2, h3, h4 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .remark-slide-content h1 { font-size: 3em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .remark-slide-content h4 { font-size: 1.2em; }
+
+       blockquote {
+        background: #f9f9f9;
+        border-left: 10px solid #ccc;
+        margin: 0.5em 10px;
+        padding: .1em 10px .1em 10px;
+        quotes: "\201C""\201D""\2018""\2019";
+       }
+
+      .footnote {
+        position: absolute;
+        bottom: 3em;
+        font-size: 0.8em;
+        padding-right: 5em;
+      }
+      .footnotetext {
+        position: absolute;
+        font-size: 0.8em;
+        padding-right: 5em;
+        bottom: 5%;
+        left: 9%;
+      }
+      li p { line-height: 1.25em; }
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+      .small { font-size: 0.8em; }
+      a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }     
+
+      table {
+        border-collapse: collapse;
+      }
+      th, td {
+       padding: 5px;
+       border: 1px solid grey;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.9em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
+
+      /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        /*padding-top: 1em;*/
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+#Circular consumption and production of electronic devices
+An approach to measuring durability, upgradeability, reusability, obsolescence and premature recycling
+
+[comment]: <> (dasd)
+
+.footnote[Go to [project site](https://www.ereuse.org)]
+---
+## What is Circular Consumption of Electronic Devices?
+[comment]: <> (Consumers use the same electronic devices for the longest time, either internally, or by collaborating with external agents so that these devices are reused and recycled properly, but recycled no prematurely, only when they can no longer be used or reused by anyone else. )
+
+---
+layout: false
+
+.left-column[
+  ## Agenda
+]
+.right-column[
+<h2>An approach to measuring durability, upgradeability, reusability, obsolescence and premature recycling </h2>
+***
+- Measure 1: Hours of device usage  
+
+[comment]: <> (erwre)
+
+- Measure 2: Use value of devices
+
+[comment]: <> (4234)
+
+- Measure 3: Percentage of devices per model in use phase
+
+[comment]: <> (4234)
+
+- Measure 4: Percentage of recycled devices per model
+
+[comment]: <> (4234)
+
+- Metric 1: Hours of lifecycle usage per device
+
+[comment]: <> (4234)
+
+- Metric 2: Durability 
+
+[comment]: <> (4234)
+
+- Metric 3: Performance in usage hours per device
+
+[comment]: <> (4234)
+
+- Metric 4: Upgradeability
+
+[comment]: <> (The maximum usage value that a model has reached.)
+
+- Metric 5: Reusability 
+
+[comment]: <> (Probability of it being reusable according to the proportion of devices of the same model and use value in use)
+
+- Metric 6: Potential Reusability
+
+[comment]: <> (Probability of it being reusable according to the proportion of devices of the same model and )
+
+- Metric 7: Premature Recycling 
+
+[comment]: <> (4234)
+
+- Metric 8: Obsolescence
+
+[comment]: <> (4234)
+
+- Metric 9: Recycling
+
+[comment]: <> (4234)
+
+- Discussion
+
+[comment]: <> (4234)
+
+- Conclusions
+
+[comment]: <> (4234)
+
+]
+---
+template: inverse
+
+## Measures
+---
+layout: false
+.left-column[
+  ## Measures
+  ###Hours of device usage
+
+<img src="./imgs/calendar.jpeg" alt="drawing" width="150" height="100"  style="padding-left: 0px; padding-bottom: 0px;padding-right: 0px"/>
+
+]
+.right-column[
+<h2>A measure that indicates the number of hours that a particular device has been in usage.</h2>
+***
+- Capture method: Extracted using a software that inspects the attribute "Power-On Time Count" stored on the memory of the Hard Drive Controller. 
+
+[comment]: <> (Esta información no se pierde cuando borras el disco duro)
+
+<img src="./imgs/harddrive.jpg" alt="drawing" width="300" align="middle"  style="padding-left: 50px; padding-bottom: 0px;padding-right: 0px;padding-top: 30px;"/>
+]
+---
+layout: false
+.left-column[
+  ## Measures
+  ###Hours of device usage
+  ### Use value per device
+<img src="./imgs/valueofuse.png" alt="drawing" width="140" height="30" align="left"/ style="padding-left: 0px; padding-bottom: 20px;padding-top: 10px;padding-right: 20px">
+]
+.right-column[
+<h2>A measure (evaluative) that score of the performance or use value .red[*] of a device. </h2>
+***
+
+[comment]: <> (For example, if the write speed of a hard drive is at percentile 10, this feature would get 10% of the possible points of the hard drive's speed feature. The characteristics of the components (e.g. write/read speed, size) and the components (e.g. disk, memory) are then merged together by weighted harmonic averages. )
+
+- Capture method: A software collects the performance of the devices at component level and scores them according to a comparison with other devices registered in the system. 
+<img src="./imgs/softwarevalueofuse.png" alt="drawing" width="500" align="left" style="padding-left: 0px; padding-bottom: 20px;padding-top: 20px;padding-right: 20px"/>
+
+- Formula: Aggregates in a single value the measures for all its components (disc, memory, processor, etc...). The resulting value ranges from 0 to 5, never reaching 5. The use value of a device over time tends to decay as its performance declines to lower percentiles.
+]
+
+.footnotetext[**Note**: .red[*] We refer by "use value" to the capacity of a device to satisfy a need, in our case of computing (storing, processing, viewing data, etc.), and not to the "exchange value" of a device on the market. ]
+
+---
+
+.left-column[
+  ## Measures
+  ###Hours of device usage
+  ### Use value per device
+  ### % of devices per model in use phase versus recyled
+]
+.right-column[
+<h2>Calculates the percentage of devices per model that are in use versus those that are recycled. </h2>
+***
+> **X: % of devices in use for a given a model M**   
+> X(M) = (Devices in use of <sub>M</sub>)  `&#47` (Total of devices of <sub>M</sub>)   
+    
+> **Y: % of devices recyled for a given a model &theta;**   
+> Y(M) = (Devices recycled of <sub>M</sub>)  `&#47` (Total of devices of <sub>M</sub>)   
+    
+
+[comment]: <> (More math symbols: https://sites.psu.edu/symbolcodes/codehtml/#math, More online charts in https://live.amcharts.com/new/edit/)
+
+<img src="./imgs/percentageDevices.jpeg" alt="drawing" width="500" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 10px;padding-right: 50px"/>
+
+]
+
+---
+template: inverse
+## Metrics
+---
+.left-column[
+  ## Metrics
+  ###U: Usage hours per device
+]
+.right-column[
+<h2>Indicates the number of hours that a device has been in all usage cycles</h2>
+***
+> **U: Usage hours per device D**    
+> U(D) = `&#8721` usage hours of all.red[*] hard drives used in D
+
+
+[comment]: <> (More math symbols: https://sites.psu.edu/symbolcodes/codehtml/#math, More online charts in https://live.amcharts.com/new/edit/)
+
+<img src="./imgs/Hours-of-lifecycle-usage-per-device.jpeg" alt="drawing" width="500" align="middle" style="padding-left: 10px; padding-bottom: 20px;padding-top: 30px;padding-right: 20px"/>
+
+.footnotetext[**Note**: .red[*] In order to be able to count the hours of a device that has had several hard disks, before replacing the disk, this must be erased with a software that publishes the Hours of  in the blockchain of eReuse.org.  In the example the three discs sum 95.000 hours]
+
+]
+---
+.left-column[
+  ## Metrics
+  ###U: Usage hours per device
+  ###D:Durability per model in usage hours
+]
+.right-column[
+<h2>Indicates us the estimated duration of operation in hours that a device model can reach to have</h2>
+***
+>  **D: Durability per model M**   
+> D(M) = The 90th percentil of the lifecycle usage hours per model M
+>   
+
+
+[comment]: <> (ccc)
+   
+
+.first[
+	Model                      | Manufacturer  | Model Durability
+	------------------------------ | --------------------- | -------------
+	7000                       | Lenovo           | 53.534,8 	
+	EB1007      	       | Asus      	       | 51.145,6 	
+	HP Compaq 6005    | Hp                  | 44.198,4 	
+	HP Compaq dc7600 | Hp        	       | 43.805   
+	B202                       | Asus      	       | 42.258,3 	
+	]
+]
+
+---
+.left-column[
+  ## Metrics
+  ###U: Usage hours per device
+  ###D:Durability per model in usage hours
+  ###P: Performance in usage hours per device
+]
+.right-column[
+<h2>Indicates the extent to which this device has been used compared to other devices of the same model</h2>
+***
+>**P: Performance in usage hours per device of model M**   
+>P(M) = Usage hours of a device  `&#47`  Durability of the model (M)
+    
+
+[comment]: <> (ccc)
+
+.first[
+| Model                       	| Man.	        | HDD Hours     	| Model Durability 	| Performance           	|
+|------------------------------------	|-------------------	|------------------------	|-----------------	        |---------------------------------	|
+| Veriton M400                	| Acer         	| 65.332              	| 30.043           	| 217%                        	|
+| HP Compaq 6005 Pro    	| Hp           	| 64.228              	| 44.198         	        | 145%                        	|
+| Veriton M400                	| Acer         	| 64.050              	| 30.043           	| 213%                        	|
+| Veriton M400                	| Acer         	| 63.941              	| 30.043           	| 213%                        	|
+]
+]
+---
+.left-column[
+  ## Metrics
+  ###U: Usage hours per device
+  ###D:Durability per model in usage hours
+  ###P: Performance in usage hours per device
+  ###UP: Upgradeability
+]
+.right-column[
+<h2>Indicates the potential for improvement that a device has</h2>
+***
+>**UP: Upgradeability of a device**   
+>P(M) = 1 – (Device Use Value `&#47` Maximum model Use Value)   
+
+
+[comment]: <> (ccc)
+   
+.first[
+	| Model            	         | Man. 	        | UV	        | Max UV                  | Upgradeability	        |
+	|------------------------------- |--------------	|------------	|------------------------	|---------------------------------	|
+	| Latitude E6300   	 | Dell         	| 1,66       | 3,92                   	| 58%                             	|
+	| OptiPlex 700     	 | Dell         	| 2,07       | 4,008                  	| 48%                             	|
+	| HP ProBook 5300  	 | Hp           	| 2,07       | 3,91                   	| 47%                             	|
+	| OptiPlex 300     	 | Dell         	| 1,65       | 2,76                   	| 40%                             	|
+	| OptiPlex GX      	 | Dell         	| 1,77       | 2,82                   	| 37%                             	|
+	| HP ProBook 4500  	 | Hp           	| 3,93       | 3,95                   	| 1%                              	|
+	| HP Compaq dc5700 | Hp                 | 2,45    	| 2,46                   	| 0%                              	|
+	]
+
+.footnotetext[**Note**: .red[*] UV: Use value of a device or scoring of the performance of a device.]
+]
+
+---
+name: how
+
+.left-column[
+  ## How does it work?
+### - Markdown
+]
+.right-column[
+A Markdown-formatted chunk of text is transformed into individual slides by JavaScript running in the browser:
+
+```remark
+# Slide 1
+This is slide 1
+
+---
+
+# Slide 2
+This is slide 2
+```
+
+.slides[
+  .first[
+  ### Slide 1
+  This is slide 1
+  ]
+  .second[
+  ### Slide 2
+  This is slide 2
+  ]
+]
+
+Regular Markdown rules apply with only a single exception:
+
+  - A line containing three dashes constitutes a new slide
+  (not a horizontal rule, `&lt;hr /&gt;`)
+
+Have a look at the [Markdown website](http://daringfireball.net/projects/markdown/) if you're not familiar with Markdown formatting.
+]
+---
+.left-column[
+  ## How does it work?
+  ### - Markdown
+  ### - Inside HTML
+]
+.right-column[
+A simple HTML document is needed for hosting the styles, Markdown and the generated slides themselves:
+
+```xml
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      /* Slideshow styles */
+    </style>
+  </head>
+  <body>
+*    <textarea id="source">
+      <!-- Slideshow Markdown -->
+    &lt;/textarea&gt;
+*    <script src="remark.js">
+    </script>
+    <script>
+*      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
+```
+
+You may download remark to have your slideshow not depend on any online resources, or reference the [latest version](http://remarkjs.com/downloads/remark-latest.min.js) online directly.
+]
+---
+template: inverse
+
+## Of course, Markdown can only go so far.
+---
+.left-column[
+  ## Markdown extensions
+]
+.right-column[
+To help out with slide layout and formatting, a few Markdown extensions have been included:
+
+- Slide properties, for naming, styling and templating slides
+
+- Content classes, for styling specific content
+
+- Syntax highlighting, supporting a range of languages
+]
+
+---
+.left-column[
+  ## Markdown extensions
+  ### - Slide properties
+]
+.right-column[
+Initial lines containing key-value pairs are extracted as slide properties:
+
+```remark
+name: agenda
+class: middle, center
+
+# Agenda
+
+The name of this slide is {{ name }}.
+```
+
+Slide properties serve multiple purposes:
+
+* Naming and styling slides using properties `name` and `class`
+
+* Using slides as templates using properties `template` and `layout`
+
+* Expansion of `{{ property }}` expressions to property values
+
+See the [complete list](https://github.com/gnab/remark/wiki/Markdown#slide-properties) of slide properties.
+]
+---
+.left-column[
+  ## Markdown extensions
+  ### - Slide properties
+  ### - Content classes
+]
+.right-column[
+Any occurences of one or more dotted CSS class names followed by square brackets are replaced with the contents of the brackets with the specified classes applied:
+
+```remark
+.footnote[.red.bold[*] Important footnote]
+```
+
+Resulting HTML extract:
+
+```xml
+<span class="footnote">
+  <span class="red bold">*</span> Important footnote
+</span>
+```
+]
+---
+.left-column[
+  ## Markdown extensions
+  ### - Slide properties
+  ### - Content classes
+  ### - Syntax Highlighting
+]
+.right-column[
+Code blocks can be syntax highlighted by specifying a language from the set of [supported languages](https://github.com/gnab/remark/wiki/Configuration#highlighting).
+
+Using [GFM](http://github.github.com/github-flavored-markdown/) fenced code blocks you can easily specify highlighting language:
+
+.pull-left[
+
+<pre><code>```javascript
+function add(a, b)
+  return a + b
+end
+```</code></pre>
+]
+.pull-right[
+
+<pre><code>```ruby
+def add(a, b)
+  a + b
+end
+```</code></pre>
+]
+
+A number of highlighting [styles](https://github.com/gnab/remark/wiki/Configuration#highlighting) are available, including several well-known themes from different editors and IDEs.
+
+]
+---
+.left-column[
+  ## Presenter mode
+]
+.right-column[
+To help out with giving presentations, a presenter mode comprising the
+following features is provided:
+
+- Display of slide notes for the current slide, to help you remember
+  key points
+
+- Display of upcoming slide, to let you know what's coming
+
+- Cloning of slideshow for viewing on extended display
+]
+---
+.left-column[
+  ## Presenter mode
+  ### - Inline notes
+]
+.right-column[
+Just like three dashes separate slides,
+three question marks separate slide content from slide notes:
+
+```
+Slide 1 content
+
+*???
+
+Slide 1 notes
+
+---
+
+Slide 2 content
+
+*???
+
+Slide 2 notes
+```
+
+Slide notes are also treated as Markdown, and will be converted in the
+same manner slide content is.
+
+Pressing __P__ will toggle presenter mode.
+]
+???
+Congratulations, you just toggled presenter mode!
+
+Now press __P__ to toggle it back off.
+---
+.left-column[
+  ## Presenter mode
+  ### - Inline notes
+  ### - Cloned view
+]
+.right-column[
+Presenter mode of course makes no sense to the audience.
+
+Creating a cloned view of your slideshow lets you:
+
+- Move the cloned view to the extended display visible to the audience
+
+- Put the original slideshow in presenter mode
+
+- Navigate as usual, and the cloned view will automatically keep up with the original
+
+Pressing __C__ will open a cloned view of the current slideshow in a new
+browser window.
+]
+---
+template: inverse
+
+## It's time to get started!
+---
+.left-column[
+  ## Getting started
+]
+.right-column[
+Getting up and running is done in only a few steps:
+
+1. Visit the [project site](http://github.com/gnab/remark)
+
+2. Follow the steps in the Getting Started section
+
+For more information on using remark, please check out the [wiki](https://github.com/gnab/remark/wiki) pages.
+]
+---
+name: last-page
+template: inverse
+
+## That's all folks (for now)!
+
+Slideshow created using [remark](http://github.com/gnab/remark).
+    </textarea>
+    <script src="js/remark-latest.min.js"></script>
+    <script>
+      var hljs = remark.highlighter.engine;
+    </script>
+    <script src="js/remark.language.js"></script>
+    <script>
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark',
+          highlightLines: true
+        }) ;
+    </script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44561333-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script');
+        ga.src = 'https://ssl.google-analytics.com/ga.js';
+        var s = document.scripts[0];
+        s.parentNode.insertBefore(ga, s);
+      }());
+    </script>
+  </body>
+</html>
