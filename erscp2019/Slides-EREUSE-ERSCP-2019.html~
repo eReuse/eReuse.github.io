@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta name="keywords" content="eReuse.org, Circular Consumption, Reuse, Electronic Devices" />
     <meta name="description" content="What is circular consumption of electronics? Is it measurable? Can we set goals or compare with other consumers? A principle of circular economy is durability, prolonging the useful life of products. If we move the principle to the function of consumption, we would have that: circular consumption is to make the most of time resources by ensuring that in the end they are recycled, but never before time or prematurely, but only when they can no longer be used or reused by anyone else. In this article we propose a set of measures, metrics and progress indicators to measure the use of resources that consumers make in their use phase. With these metrics we can identify which consumers are the most circular; those who are able to use the same electronic devices for the longest time, either internally, or by collaborating with external agents so that these devices are reused and recycled properly. We have been able to validate usage performance metrics and premature recycling in the analysis of more than 3,000 desktop and laptop type electronic devices. These devices have been discarded by hundreds of organisations in 2018 and 2019. Finally, we propose the metrics of durability and obsolescence for models and brands of devices, which although it does not allow us to know the reasons for a low durability; absence or high cost of spare parts, difficulty of repair, etc., it does allow us to elaborate a ranking so that consumers can reward with their consumption choice, manufacturers who make products that reach high thresholds of durability." />
-    <title>Remark</title>	
+    <title>Circular consumption and production of electronic devices</title>	
     <style>
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      @import url("/css/Droid-Serif.css");
+      @import url("/css/Yanone-Kaffeesatz.css");
+      @import url("/css/Ubuntu-Mono.css");
 
       body {
         font-family: 'Droid Serif';
@@ -583,8 +583,6 @@ An approach to measuring durability, upgradeability, reusability, obsolescence a
 ---
 template: inverse
 ## Backup
-
----
 
     </textarea>
     <script src="js/remark-latest.min.js"></script>
