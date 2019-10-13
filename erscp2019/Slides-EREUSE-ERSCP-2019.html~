@@ -472,7 +472,7 @@ I can safely say that it is 90% potentially reusable.
 ***
 
 >**PR: Premature Recycling per device**   
->PR(D) = Reusability potential per device
+>PR(D) `&#8801` Reusability potential per device
 
    
 
