@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>pie-chart test | amCharts</title>
+		<meta name="description" content="chart created using amCharts live editor" />
+		
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
+		
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "pie",
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"innerRadius": 32,
+					"titleField": "country",
+					"valueField": "litres",
+					"fontSize": 20,
+					"theme": "default",
+					"allLabels": [],
+					"balloon": {},
+					"titles": [],
+					"dataProvider": [
+						{
+							"country": "Devices recycled per model M",
+							"litres": "53"
+						},
+						{
+							"country": "Devices in use per model M",
+							"litres": "47"
+						}
+					]
+				}
+			);
+		</script>
+	</head>
+	<body>
+		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+	</body>
+</html>

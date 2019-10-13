@@ -280,22 +280,40 @@ layout: false
 .left-column[
   ## Measures
   ###Hours of device usage
-  ### Use value per device
-  ### % of devices per model in use phase versus recyled
+  ###Use value per device
+  ###Usage rate of a model
 ]
 .right-column[
-<h2>Calculates the percentage of devices per model that are in use versus those that are recycled. </h2>
+<h2>Measure the rate of devices per model still in usage. </h2>
 ***
-> **X: % of devices in use for a given a model M**   
-> X(M) = (Devices in use of <sub>M</sub>)  `&#47` (Total of devices of <sub>M</sub>)   
-    
-> **Y: % of devices recyled for a given a model &theta;**   
-> Y(M) = (Devices recycled of <sub>M</sub>)  `&#47` (Total of devices of <sub>M</sub>)   
+> **UM: The Usage rate of a given model M**   
+> UM(M) = (Devices in use of model <sub>M</sub>)  `&#47` (Total of devices of model <sub>M</sub>)   
+   
+
+[comment]: <> (More math symbols: https://sites.psu.edu/symbolcodes/codehtml/#math, More online charts in https://live.amcharts.com/new/edit/)
+
+<img src="./imgs/usage-rate.jpg" alt="drawing" width="500" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 10px;padding-right: 50px"/>
+
+]
+
+---
+.left-column[
+  ## Measures
+  ###Hours of device usage
+  ###Use value per device
+  ###Usage rate of a model
+  ###Recycling rate of a model
+]
+.right-column[
+<h2>Measure the rate of devices per model still in usage. </h2>
+***
+> **RM: The Recycling rate of a model M**   
+> RM(M) = (Devices recycled of model <sub>M</sub>)  `&#47` (Total of devices of model <sub>M</sub>)   
     
 
 [comment]: <> (More math symbols: https://sites.psu.edu/symbolcodes/codehtml/#math, More online charts in https://live.amcharts.com/new/edit/)
 
-<img src="./imgs/percentageDevices.jpeg" alt="drawing" width="500" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 10px;padding-right: 50px"/>
+<img src="./imgs/recycling-rate.jpg" alt="drawing" width="500" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 17px;padding-right: 50px"/>
 
 ]
 
@@ -449,7 +467,7 @@ reusable.
 ```remark
 Before getting rid of my laptop Dell Latitude model E6440 
 with value of use 3. I check that there are 90% of these with
-similar or upgraded value still in operation. in operation.  
+similar or upgraded value still in operation.
 I can safely say that it is 90% potentially reusable.
 
 ```
@@ -472,22 +490,49 @@ I can safely say that it is 90% potentially reusable.
 ***
 
 >**PR: Premature Recycling per device**   
->PR(D) `&#8801` Reusability potential per device
+>PR(D) = Reusability Potential
 
    
 
 ```remark
-Before getting rid of my laptop Dell Latitude model E6440 
-with value of use 3. I check that there are 90% of these with
-similar or upgraded value still in operation. in operation.  
-I can safely say that it is 90% potentially reusable.
-
+I discard for recycling my laptop Dell Latitude 
+model E6440, with a 90% Reusability Potential.
+I am prematurely recycling 90% of my laptop.
 ```
 
 [comment]: <> (ccc)
 
 ]
 
+---
+
+.left-column[
+  ## Metrics
+  ###R: Reusability
+  ###RP: Reusability Potential
+  ###PR: Premature Recycling 
+  ###O: Obsolescence of a model
+
+.right-column[
+<h2>Indicates the impossibility or low usage of using a device which, even having good performance, is no longer usable</h2>
+***
+
+>**O: Obsolescence of a model M**   
+>O(M) = The maximum difference of percentages ()with another model gives us the obsolescence value
+
+Maximum diference between percentages of a model devices in a reycling phase compared with other devices from other models still in usage, both with similar use value
+
+   
+
+```remark
+I discard for recycling my laptop Dell Latitude 
+model E6440, with a 90% Reusability Potential.
+I am prematurely recycling 90% of my laptop.
+```
+
+[comment]: <> (ccc)
+
+]
 
 ---
 name: how
