@@ -362,7 +362,6 @@ template: inverse
 	7000                       | Lenovo           | 53.534
 	EB1007      	       | Asus      	       | 51.145 	
 	HP Compaq 6005    | Hp                  | 44.198 	
-	B202                       | Asus      	       | 42.258 	
 	]
 ]
 
@@ -387,8 +386,6 @@ template: inverse
 |------------------------------------	|-------------------	|------------------------	|-----------------	        |---------------------------------	|
 | Veriton M400                	| Acer         	| 65.332              	| 30.043           	| 217%                        	|
 | HP Compaq 6005 Pro    	| Hp           	| 64.228              	| 44.198         	        | 145%                        	|
-| Veriton M400                	| Acer         	| 64.050              	| 30.043           	| 213%                        	|
-| Veriton M400                	| Acer         	| 63.941              	| 30.043           	| 213%                        	|
 ]
 ]
 ---
@@ -412,9 +409,7 @@ template: inverse
 	| Model            	         | Man. 	        | UV	        | Max UV                  | Upgradeability	        |
 	|------------------------------- |--------------	|------------	|------------------------	|---------------------------------	|
 	| Latitude E6300   	 | Dell         	| 1,66       | 3,92                   	| 58%                             	|
-	| OptiPlex 700     	 | Dell         	| 2,07       | 4,008                  	| 48%                             	|
 	| HP ProBook 4500  	 | Hp           	| 3,93       | 3,95                   	| 1%                              	|
-	| HP Compaq dc5700 | Hp                 | 2,45    	| 2,46                   	| 0%                              	|
 	]
 
 .footnotetext[**Note**: .red[*] UV: Use value of a device or scoring of the performance of a device.]
@@ -461,7 +456,7 @@ reusable.
    
 
 ```remark
-Before getting rid of my laptop Dell Latitude model E6440 
+Before discard of my laptop Dell Latitude model E6440 
 with value of use 3. I check that there are 90% of these with
 similar or upgraded value still in operation.
 I can safely say that it is 90% potentially reusable.
@@ -508,27 +503,27 @@ I am prematurely recycling 90% of my laptop.
   ###RP: Reusability Potential
   ###PR: Premature Recycling 
   ###O: Obsolescence of a model
-
+]
 .right-column[
-<h2>Indicates the impossibility or low usage of using a device which, even having good performance, is no longer usable</h2>
+<h2>Indicates the dificulty of using a device which, even having good performance, is in low usage</h2>
 ***
 
 >**O: Obsolescence of a model M**   
->O(M) = The maximum difference of percentages ()with another model gives us the obsolescence value
-
-Maximum diference between percentages of a model devices in a reycling phase compared with other devices from other models still in usage, both with similar use value
-
+>We define a low Usage Rate threshold as around 30%.
+>O(M) = The maximum difference between the low.red[*] Usage Rate threshold and the top Usage Rate with same Usage Value
    
 
 ```remark
-I discard for recycling my laptop Dell Latitude 
-model E6440, with a 90% Reusability Potential.
-I am prematurely recycling 90% of my laptop.
+I have to discard my laptop model X with value of use 3, it 
+have a Usage Rate of 30%, instead, users of the Y model with 
+the same Value of Use have a Usage Rate by 80%. 
+The obsolescence of my X model is at least of 50% (80%-30%).
 ```
-
+    
 [comment]: <> (ccc)
 
 ]
+.footnotetext[**Note**: .red[*] A model should become obsolete because its use value is low and not for other reasons; if in a model we find a set of devices that still have use value to be in use, but are discarded, it means that there is some kind of obsolescence that is not a function of the performance of the model.]
 
 ---
 name: how
