@@ -168,67 +168,55 @@ layout: false
   ## Agenda
 ]
 .right-column[
-<h2>An approach to measuring durability, upgradeability, reusability, obsolescence and premature recycling </h2>
+  ## Measures, Metrics and Indicators
 ***
-- Measure 1: Hours of device usage  
+- Measures: 
+ - Hours of device usage  
 
 [comment]: <> (erwre)
 
-- Measure 2: Use value of devices
+ - Use value of devices
 
 [comment]: <> (4234)
 
-- Measure 3: Percentage of devices per model in use phase
+ - Usage rate of a model
 
 [comment]: <> (4234)
 
-- Measure 4: Percentage of recycled devices per model
+ - Recycling rate of a model
+[comment]: <> (4234)
+   
+- Metrics:
+ - Usage hours per device
+   
+[comment]: <> (4234)
+ - Durability per model in usage hours
+   
+[comment]: <> (4234)
+ - Performance in usage hours per device
+   
+[comment]: <> (4234)
+ - Upgradeability
+   
+[comment]: <> (4234)
+ - Reusability
+   
+[comment]: <> (4234)
+ - Reusability Potential
+   
+[comment]: <> (4234)
+ - Premature Recycling
+   
+[comment]: <> (4234)
+ - Obsolescence of a model
+
+- Indicators
+ - Circular Consumption & Production
+
+- Discussion and Conclusions
 
 [comment]: <> (4234)
 
-- Metric 1: Hours of lifecycle usage per device
-
-[comment]: <> (4234)
-
-- Metric 2: Durability 
-
-[comment]: <> (4234)
-
-- Metric 3: Performance in usage hours per device
-
-[comment]: <> (4234)
-
-- Metric 4: Upgradeability
-
-[comment]: <> (The maximum usage value that a model has reached.)
-
-- Metric 5: Reusability 
-
-[comment]: <> (Probability of it being reusable according to the proportion of devices of the same model and use value in use)
-
-- Metric 6: Reusability Potential 
-
-[comment]: <> (Probability of it being reusable according to the proportion of devices of the same model and )
-
-- Metric 7: Premature Recycling 
-
-[comment]: <> (4234)
-
-- Metric 8: Obsolescence
-
-[comment]: <> (4234)
-
-- Metric 9: Recycling
-
-[comment]: <> (4234)
-
-- Discussion
-
-[comment]: <> (4234)
-
-- Conclusions
-
-[comment]: <> (4234)
 
 ]
 ---
@@ -239,10 +227,7 @@ template: inverse
 layout: false
 .left-column[
   ## Measures
-  ###Hours of device usage
-
-<img src="./imgs/calendar.jpeg" alt="drawing" width="150" height="100"  style="padding-left: 0px; padding-bottom: 0px;padding-right: 0px"/>
-
+  ###U: Usage hours per device
 ]
 .right-column[
 <h2>A measure that indicates the number of hours that a particular device has been in usage.</h2>
@@ -250,15 +235,38 @@ layout: false
 - Capture method: Extracted using a software that inspects the attribute "Power-On Time Count" stored on the memory of the Hard Drive Controller. 
 
 [comment]: <> (Esta información no se pierde cuando borras el disco duro)
+   
 
-<img src="./imgs/harddrive.jpg" alt="drawing" width="300" align="middle"  style="padding-left: 50px; padding-bottom: 0px;padding-right: 0px;padding-top: 30px;"/>
+<img src="./imgs/calendar.jpeg" alt="drawing" width="300" align="left"  style="padding-left: 0px; padding-bottom: 0px;padding-right: 0px;padding-top: 35px;"/>
+
+
+<img src="./imgs/harddrive.jpg" alt="drawing" width="205" align="right"  style="padding-left: 0px; padding-bottom: 0px;padding-right: 0px;padding-top: 30px;"/>
+]
+---
+.left-column[
+  ## Metrics
+  ###U: Usage hours per device
+]
+.right-column[
+<h2>A measure that indicates the number of hours that a particular device has been in usage.</h2>
+***
+> **U: Usage hours per device D**    
+> U(D) = `&#8721` usage hours of all.red[*] hard drives used in D
+
+
+[comment]: <> (More math symbols: https://sites.psu.edu/symbolcodes/codehtml/#math, More online charts in https://live.amcharts.com/new/edit/)
+
+<img src="./imgs/Hours-of-lifecycle-usage-per-device.jpeg" alt="drawing" width="500" align="middle" style="padding-left: 10px; padding-bottom: 20px;padding-top: 30px;padding-right: 20px"/>
+
+.footnotetext[**Note**: .red[*] In order to be able to count the hours of a device that has had several hard disks, before replacing the disk, this must be erased with a software that publishes the Hours of  in the blockchain of eReuse.org.  In the example the three discs sum 95.000 hours]
+
 ]
 ---
 layout: false
 .left-column[
   ## Measures
-  ###Hours of device usage
-  ### Use value per device
+  ###Usage hours per device
+  ###Use value per device
 <img src="./imgs/valueofuse.png" alt="drawing" width="140" height="30" align="left"/ style="padding-left: 0px; padding-bottom: 20px;padding-top: 10px;padding-right: 20px">
 ]
 .right-column[
@@ -279,7 +287,7 @@ layout: false
 
 .left-column[
   ## Measures
-  ###Hours of device usage
+  ###Usage hours per device
   ###Use value per device
   ###Usage rate of a model
 ]
@@ -299,7 +307,7 @@ layout: false
 ---
 .left-column[
   ## Measures
-  ###Hours of device usage
+  ###Usage hours per device
   ###Use value per device
   ###Usage rate of a model
   ###Recycling rate of a model
@@ -323,26 +331,6 @@ template: inverse
 ---
 .left-column[
   ## Metrics
-  ###U: Usage hours per device
-]
-.right-column[
-<h2>Indicates the number of hours a device has been in all usage cycles</h2>
-***
-> **U: Usage hours per device D**    
-> U(D) = `&#8721` usage hours of all.red[*] hard drives used in D
-
-
-[comment]: <> (More math symbols: https://sites.psu.edu/symbolcodes/codehtml/#math, More online charts in https://live.amcharts.com/new/edit/)
-
-<img src="./imgs/Hours-of-lifecycle-usage-per-device.jpeg" alt="drawing" width="500" align="middle" style="padding-left: 10px; padding-bottom: 20px;padding-top: 30px;padding-right: 20px"/>
-
-.footnotetext[**Note**: .red[*] In order to be able to count the hours of a device that has had several hard disks, before replacing the disk, this must be erased with a software that publishes the Hours of  in the blockchain of eReuse.org.  In the example the three discs sum 95.000 hours]
-
-]
----
-.left-column[
-  ## Metrics
-  ###U: Usage hours per device
   ###D:Durability per model in usage hours
 ]
 .right-column[
@@ -368,7 +356,6 @@ template: inverse
 ---
 .left-column[
   ## Metrics
-  ###U: Usage hours per device
   ###D:Durability per model in usage hours
   ###P: Performance in usage hours per device
 ]
@@ -391,7 +378,6 @@ template: inverse
 ---
 .left-column[
   ## Metrics
-  ###U: Usage hours per device
   ###D:Durability per model in usage hours
   ###P: Performance in usage hours per device
   ###UP: Upgradeability
@@ -523,7 +509,7 @@ The obsolescence of my X model is at least of 50% (80%-30%).
 [comment]: <> (ccc)
 
 ]
-.footnotetext[**Note**: .red[*] A model should become obsolete because its use value is low and not for other reasons; if in a model we find a set of devices that still have use value to be in use, but are discarded, it means that there is some kind of obsolescence that is not a function of the performance of the model.]
+.footnotetext[**Note**: .red[*] A model should become obsolete because its use value is low and not for other reasons; if in a model we find a set of devices that still have use value to be in use, but are discarded, it means that there is some kind of obsolescence that is not a function of the performance of the model. For example: impossibility to upgrade it, repair it, use it with other software, etc ...]
 
 ---
 name: how
