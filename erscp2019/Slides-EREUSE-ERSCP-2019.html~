@@ -313,7 +313,7 @@ layout: false
 
 [comment]: <> (More math symbols: https://sites.psu.edu/symbolcodes/codehtml/#math, More online charts in https://live.amcharts.com/new/edit/)
 
-<img src="./imgs/recycling-rate.jpg" alt="drawing" width="500" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 17px;padding-right: 50px"/>
+<img src="./imgs/recycling-rate.jpg" alt="drawing" width="500" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 18px;padding-right: 50px"/>
 
 ]
 
@@ -359,11 +359,10 @@ template: inverse
 .first[
 	Model                      | Manufacturer  | Model Durability
 	------------------------------ | --------------------- | -------------
-	7000                       | Lenovo           | 53.534,8 	
-	EB1007      	       | Asus      	       | 51.145,6 	
-	HP Compaq 6005    | Hp                  | 44.198,4 	
-	HP Compaq dc7600 | Hp        	       | 43.805   
-	B202                       | Asus      	       | 42.258,3 	
+	7000                       | Lenovo           | 53.534
+	EB1007      	       | Asus      	       | 51.145 	
+	HP Compaq 6005    | Hp                  | 44.198 	
+	B202                       | Asus      	       | 42.258 	
 	]
 ]
 
@@ -414,9 +413,6 @@ template: inverse
 	|------------------------------- |--------------	|------------	|------------------------	|---------------------------------	|
 	| Latitude E6300   	 | Dell         	| 1,66       | 3,92                   	| 58%                             	|
 	| OptiPlex 700     	 | Dell         	| 2,07       | 4,008                  	| 48%                             	|
-	| HP ProBook 5300  	 | Hp           	| 2,07       | 3,91                   	| 47%                             	|
-	| OptiPlex 300     	 | Dell         	| 1,65       | 2,76                   	| 40%                             	|
-	| OptiPlex GX      	 | Dell         	| 1,77       | 2,82                   	| 37%                             	|
 	| HP ProBook 4500  	 | Hp           	| 3,93       | 3,95                   	| 1%                              	|
 	| HP Compaq dc5700 | Hp                 | 2,45    	| 2,46                   	| 0%                              	|
 	]
