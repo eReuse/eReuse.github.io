@@ -163,7 +163,7 @@ layout: false
 # Agenda
 ]
 .right-column[
-<img src="./imgs/space-transparent-10x10.png" alt="drawing" width="100" height="10" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
+<img src="./imgs/space-transparent-10x10.png" alt="drawing" width="100" height="5" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
 - ##Measures
 - ##Metrics
 - ##Indicators
@@ -180,7 +180,7 @@ template: inverse
 layout: false
 .left-column[
   ## Measures
-  ###U: Usage hours per device
+  ###U: Usage hours per device and model
 ]
 .right-column[
 <img src="./imgs/calendar.jpeg" alt="drawing" width="80" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
@@ -199,7 +199,7 @@ layout: false
 ---
 .left-column[
   ## Measures
-  ###U: Usage hours per device
+  ###U: Usage hours per device and model
 ]
 .right-column[
 <img src="./imgs/calendar.jpeg" alt="drawing" width="80" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
@@ -225,7 +225,7 @@ layout: false
 ]
 .right-column[
 <img src="./imgs/valueofuse.png" alt="drawing" width="150" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 10px;padding-right: 0px"/>
-  ##Performance per device
+  ##Performance per device and model
 ***
   ###A measure (evaluative) that score of the performance .red[*] of a device.
 > Aggregates in a single value the measures for all its components (disc, memory, processor, etc...). The resulting value ranges from 0 to 5, never reaching 5. 
@@ -364,7 +364,7 @@ template: inverse
   ###Utilization per device
 ]
 .right-column[
-##Utilization per device and model in hours
+##Utilization per device
 ***
 ###Indicates the extent to which this device has been used compared to other devices of the same model
 >**U: Utilization per device and model in hours
@@ -388,7 +388,7 @@ template: inverse
   ###Upgradeability
 ]
 .right-column[
-##Upgradeability
+##Upgradeability per device
 ***
 ###Indicates the potential for improvement that a device has.
 >**UP: Upgradeability of a device**   
