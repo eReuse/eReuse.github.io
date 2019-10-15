@@ -366,8 +366,8 @@ template: inverse
 .right-column[
 ##Utilization per device
 ***
-###Indicates the extent to which this device has been used compared to other devices of the same model
->**U: Utilization per device and model in hours
+###Indicates the extent to which this device has been used in hours compared to other devices of the same model
+>**U: Utilization per device
 >U(M) = Usage hours of a device  `&#47`  Durability of the device model (M)
     
 
@@ -420,7 +420,7 @@ template: inverse
 ***
 ###Indicates how reusable a device is
 >**R: Reusability per device**   
->R(D) = % devices in use per model with similar Performance
+>R(D) = % devices of the model in use with similar performance
 
 
 ```remark
@@ -448,7 +448,7 @@ reusable.
 ###Indicates how reusable a device is if we upgrade it.
    
 >**R: Reusability potential per device**   
->R(D) = % Devices in use per model of the device with upgraded performance
+>R(D) = % Devices of the model in use with upgraded performance
   
 
 ```remark
@@ -509,22 +509,21 @@ I am prematurely recycling 90% of my laptop.
 ***
 ###Indicates the dificulty of using a device which, even having good performance, is in low utilization.
    
->**O: Obsolescence of a model M**   
->We define a low Utilization Rate threshold as around 30%.
->O(M) = The maximum difference between the low.red[*] Utilization Rate threshold and the top Utilization Rate with same Performance
+>**O: Obsolescence of a model M**    
+>O(M) = The maximum difference between the low.red[*] _usage rate_ threshold and the top _usage rate_ with same Performance
    
 
 ```remark
 I have to discard my laptop model X with value of use 3, it 
-have a Usage Rate of 30%, instead, users of the Y model with 
-the same Value of Use have a Usage Rate by 80%. 
+have a _usage rate_ of 30%, instead, users of the Y model with 
+the same Value of Use have a *usage rate* by 80%. 
 The obsolescence of my X model is at least of 50% (80%-30%).
 ```
     
 [comment]: <> (ccc)
 
 ]
-.footnotetext[**Note**: .red[*] A model should become obsolete because its performance is low and not for other reasons; if in a model we find a set of devices that still have performance to be in use, but are discarded, it means that there is some kind of obsolescence that is not a function of the performance of the model. For example: impossibility to upgrade it, repair it, use it with other software, etc ...]
+.footnotetext[**Note**: .red[*] We define a low _usage rate_ threshold as around 30%. A model should become obsolete because its performance is low and not for other reasons; if in a model we find a set of devices that still have performance to be in use, but are discarded, it means that there is some kind of obsolescence that is not a function of the performance of the model. For example: impossibility to upgrade it, repair it, use it with other software, etc ...]
 
 ---
 template: inverse

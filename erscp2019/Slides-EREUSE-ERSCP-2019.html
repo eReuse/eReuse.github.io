@@ -366,8 +366,8 @@ template: inverse
 .right-column[
 ##Utilization per device
 ***
-###Indicates the extent to which this device has been used compared to other devices of the same model
->**U: Utilization per device and model in hours
+###Indicates the extent to which this device has been used in hours compared to other devices of the same model
+>**U: Utilization per device
 >U(M) = Usage hours of a device  `&#47`  Durability of the device model (M)
     
 
@@ -420,12 +420,12 @@ template: inverse
 ***
 ###Indicates how reusable a device is
 >**R: Reusability per device**   
->R(D) = % devices in use per model with similar performance
+>R(D) = % devices of the model in use with similar performance
 
 
 ```remark
 Before getting rid of my laptop Dell Latitude model E6440 
-with value of use 3. I check that there are 70% of these
+with performance 3. I check that there are 70% of these
 still in operation.  I can safely say that it is 70% 
 reusable.
 ```
@@ -448,12 +448,12 @@ reusable.
 ###Indicates how reusable a device is if we upgrade it.
    
 >**R: Reusability potential per device**   
->R(D) = % Devices in use per model of the device with upgraded performance
+>R(D) = % Devices of the model in use with upgraded performance
   
 
 ```remark
 Before discard of my laptop Dell Latitude model E6440 
-with value of use 3. I check that there are 90% of these with
+with performance 3. I check that there are 90% of these with
 similar or upgraded value still in operation.
 I can safely say that it is 90% potentially reusable.
 
@@ -509,22 +509,21 @@ I am prematurely recycling 90% of my laptop.
 ***
 ###Indicates the dificulty of using a device which, even having good performance, is in low utilization.
    
->**O: Obsolescence of a model M**   
->We define a low Utilization Rate threshold as around 30%.
->O(M) = The maximum difference between the low.red[*] Utilization Rate threshold and the top Utilization Rate with same Performance
+>**O: Obsolescence of a model M**    
+>O(M) = The maximum difference between the low.red[*] _usage rate_ threshold and the top _usage rate_ with same Performance
    
 
 ```remark
-I have to discard my laptop model X with value of use 3, it 
-have a Usage Rate of 30%, instead, users of the Y model with 
-the same Value of Use have a Usage Rate by 80%. 
+I have to discard my laptop model X with _performance_ 3, it 
+has a _usage rate_ of 30%, instead, users of the Y model with 
+the same _performance_ has a *usage rate* by 80%. 
 The obsolescence of my X model is at least of 50% (80%-30%).
 ```
     
 [comment]: <> (ccc)
 
 ]
-.footnotetext[**Note**: .red[*] A model should become obsolete because its performance is low and not for other reasons; if in a model we find a set of devices that still have performance to be in use, but are discarded, it means that there is some kind of obsolescence that is not a function of the performance of the model. For example: impossibility to upgrade it, repair it, use it with other software, etc ...]
+.footnotetext[**Note**: .red[*] We define a low _usage rate_ threshold as around 30%. A model should become obsolete because its performance is low and not for other reasons; if in a model we find a set of devices that still have performance to be in use, but are discarded, it means that there is some kind of obsolescence that is not a function of the performance of the model. For example: impossibility to upgrade it, repair it, use it with other software, etc ...]
 
 ---
 template: inverse
@@ -540,7 +539,7 @@ template: inverse
 ###Consumers **use** the same electronic devices for the longest time, either internally, or by collaborating with external agents so that these devices are **reused** and **recycled** but not **prematurely**.
    
 >- The durability: choose the most durable.red[*] models and try to upgrade them as possible.
->- Premature recycling: choose partners that reuse (with upgrade) and recycle only when the reusability potential is low (low value of use).
+>- Premature recycling: choose partners that reuse (with upgrade) and recycle only when the reusability potential is low (low performance).
 >- Recycling: choose partners than ensure recycling, ask them for this traceability of recycling.
    
 
@@ -576,7 +575,7 @@ template: inverse
 ---
 ## Conclusions and discussion
 
- 1. Approach:  Focuse on usage phase and value of use when recycling to measure circularity of consumption and products.  
+ 1. Approach:  Focuse on usage phase and _performance_ when recycling to measure circularity of consumption and products.  
 
  2.
 
@@ -584,13 +583,13 @@ four measures, software instruments, metrics and indicators for measure circular
    
 [comment]: <> (Our approach to measuring circularity in the consumption and production of electronic devices is to focus on the performance achieved in their use phase.  Performing these measurements at certain times of their usage cycle and with their respective instruments we define the metrics proposed to measure the circularity of consumers and products.)
    
- 2. Measures: Is it realistic and feasible to collect hours of use? value of use? usage and recycling rates?
+ 2. Measures: Is it realistic and feasible to collect hours of use? performance? usage and recycling rates?
    
 [comment]: <> ( We have four measures: the 1. usage hours, 2. performance, 3. usage rate, 4. recycling rate. In order to know the durability of the device in all its usage phases it is necessary to analyse all the hard drives it has had. The necessary instrument to collect the measurement of usage hours is a software that analyses the variables in the hard drive. In order to know the durability of the device throughout its usage phase, it is necessary to analyse all the hard drives it had. We propose that each time the data is wiped from the drive, either because there is a drive replacement or because it is reused by another user, the data erasure software employed notifies the serial number of the device, of the hard drive and the usage hours. Aggregating this information would allow to have all the hours of its usage cycles. When a hard disk is discarded, data is usually erased. We propose that it is just at the time of data erasure when data is reported: serial number of the hard disk, the serial number of the device and the hours made by the hard disk. Is it a trusted and irreversible data repository (a blockchain) the place where to store this information in order to be able to analyse it and know the total durability? DECIR QUE TENEMOS EL USAGE AND RECYCLING RATES PARA UN SUBCONJUNTO )
    
  3. Metrics validated with 3000 devices in first usage cycle (not in reuse): Usage hours per device, durability, utilization, upgradeability. Not validated: reusability, potential, obsolescence by model and premature recycling.
    
-[comment]: <> (The study carried out with more than 3,000 devices has allowed us to validate the metrics of: first cycle hours of use of the device, total hours of use of the device, durability of the model in hours of use, performance of the device in hours of use, maximum value of use of the model and current upgradeability of the device. As there we do not have all information about model usage and recyling rates, , it has not been possible to validate the metrics of current reusability, potential, obsolescence by model and premature recycling.)
+[comment]: <> (The study carried out with more than 3,000 devices has allowed us to validate the metrics of: first cycle hours of use of the device, total hours of use of the device, durability of the model in hours of use, performance of the device in hours of use, maximum performance of the model and current upgradeability of the device. As there we do not have all information about model usage and recyling rates, , it has not been possible to validate the metrics of current reusability, potential, obsolescence by model and premature recycling.)
    
  4. Consumers base their election on brand durability history. Can this have an impact?
 
