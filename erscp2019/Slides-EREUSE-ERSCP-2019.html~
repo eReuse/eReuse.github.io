@@ -159,30 +159,19 @@ An approach to measuring durability, upgradeability, reusability, obsolescence a
 .footnote[Go to [project site](https://www.ereuse.org)]
 ---
 layout: false
-
-## Agenda
-***
-- Measures: 
- - Usage hours per device  
- - Performance per device
- - Devices in use per model  
- - Devices recyled per model  
-- Metrics:   
- - Usage rate per model   
- - Recycling rate per model
- - Durability per device and model
- - Utilization per device and model
- - Upgradeability per device and model
- - Reusability per device and model
- - Reusability potential per device and model
- - Premature recycling per device and model
- - Obsolescence per device and model
-- Indicators
- - Circular Consumption
- - Circular Production
-- Discussion and Conclusions
+.left-column[
+# Agenda
+]
+.right-column[
+<img src="./imgs/space-transparent-10x10.png" alt="drawing" width="100" height="10" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
+- ##Measures
+- ##Metrics
+- ##Indicators
+- ##Discussion
+- ##Conclusions
 
 [comment]: <> (4234)
+]
 ---
 template: inverse
 
@@ -605,6 +594,32 @@ four measures, software instruments, metrics and indicators for measure circular
    
  4. Consumers base their election on brand durability history. Can this have an impact?
 
+---
+layout: false
+
+## Conclusiones : Hacer tabla, en filas los indicadores, en columnas las medidas. Indicar donde se usa cada una.
+***
+- Measures: 
+ - Usage hours per device  
+ - Performance per device
+ - Devices in use per model  
+ - Devices recyled per model  
+- Metrics:   
+ - Usage rate per model   
+ - Recycling rate per model
+ - Durability per device and model
+ - Utilization per device and model
+ - Upgradeability per device and model
+ - Reusability per device and model
+ - Reusability potential per device and model
+ - Premature recycling per device and model
+ - Obsolescence per device and model
+- Indicators
+ - Circular Consumption
+ - Circular Production
+- Discussion and Conclusions
+
+[comment]: <> (4234)
 ---
 template: inverse
 #Circular consumption and production of electronic devices
