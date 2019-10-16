@@ -1,0 +1,17 @@
+https://jsfiddle.net/2rfb8ne1/1/
+
+chart.data = [
+  { from: "Usage hours", to: "Durability", value: 1 },  
+  { from: "Usage hours", to: "Utilization per device", value:1},    
+  { from: "Performance", to: "Reusability", value: 1 },   
+  { from: "Devices recycled", to: "Recycling rate", value: 1 },  
+  { from: "Performance", to: "Upgradeability", value: 1 },  
+  { from: "Performance", to: "Obsolescence", value: 1 },
+  { from: "Devices in use", to: "Reusability potential", value: 1 }, 
+  { from: "Devices in use", to: "Premature Recycling", value: 1 },
+  { from: "Devices in use", to: "Reusability", value: 1 },    
+  { from: "Devices in use", to: "Usage rate", value: 1 },   
+  { from: "Recycling rate", to: "Obsolescence", value: 1 },  
+  { from: "Upgradeability", to: "Premature Recycling", value: 1 }      
+
+];

@@ -166,133 +166,119 @@ layout: false
 .right-column[
 <img src="./imgs/space-transparent-10x10.png" alt="drawing" width="100" height="20" style="padding-left: 0px; padding-bottom: 0px;padding-top: 46px;padding-right: 0px"/>
 - ##Introduction
+- ##Questions
 - ##Measures
 - ##Metrics
-- ##Indicators
-- ##Discussion
+- ##Compound Metrics
+- ##Data and analysis
 - ##Conclusions
 
 [comment]: <> (4234)
 ]
 ---
-## Reuse and recycling non prematurely digital devices
+[comment]: <> (## Reuse and recycling non prematurely digital devices)
+# Circular consumption of digital devices
+[comment]: <> (Introducir el contexto: grandes organizaciones que descartan productos, explicar el proceso de refurbishment)
 <img src="./imgs/use-reuse-recycle-loops.png" alt="drawing" width="800" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 50px;padding-right: 70px"/>
 
+---
+[comment]: <> (## Reuse and recycling non prematurely digital devices)
+# Circular consumption of digital devices
+<img src="./imgs/use-reuse-recycle-loops-arrows.jpeg" alt="drawing" width="800" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 31px;padding-right: 70px"/>
+
+---
+
+layout: false
+# Questions
+***
+- ## Buy: How to choose the brands with the highest durability and the low obsolescence?
+- ## Usage: How to know if your device can be upgraded before discarding it?
+- ## Discard: How to choose reuse centers with non premature recycling practices?
+
+[comment]: <> (4234)
 ---
 
 template: inverse
 
-## Measures
+## Measures: A unique and specific quantification of data
 ---
 layout: false
 .left-column[
   ## Measures
-  ###U: Usage hours per device
+  ###Usage hours
 ]
 .right-column[
 <img src="./imgs/clock.svg" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
 ##Usage hours per device
 ***
 ###A measure that indicates the number of hours that a particular device has been in usage.
-   
-> Capture method: Extracted using a software that inspects the attribute "Power-On Time Count" stored on the memory of the Hard Drive Controller. 
+
+<img src="./imgs/harddrive.jpg" alt="drawing" width="100" align="right"  style="padding-left: 0px; padding-bottom: 0px;padding-right: 0px;padding-top: 10px;"/>   
+The disk usage hours are stored on the memory of the hard drive controller. 
 
 [comment]: <> (Esta información no se pierde cuando borras el disco duro)
    
 
-
-<img src="./imgs/harddrive.jpg" alt="drawing" width="250" align="middle"  style="padding-left: 100px; padding-bottom: 0px;padding-right: 0px;padding-top: 10px;"/>
-]
----
-.left-column[
-  ## Measures
-  ###U: Usage hours per device
-]
-.right-column[
-<img src="./imgs/clock.svg" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
-##Usage hours per device
-***
-> **U: Usage hours per device D**    
-> U(D) = `&#8721` usage hours of all.red[*] hard drives used in D
-
-
-[comment]: <> (More math symbols: https://sites.psu.edu/symbolcodes/codehtml/#math, More online charts in https://live.amcharts.com/new/edit/)
-
-<img src="./imgs/Hours-of-lifecycle-usage-per-device.jpeg" alt="drawing" width="500" align="middle" style="padding-left: 10px; padding-bottom: 20px;padding-top: 30px;padding-right: 20px"/>
-
-.footnotetext[**Note**: .red[*] In order to be able to count the hours of a device that has had several hard disks, before replacing the disk, this must be erased with a software that publishes the Hours of  in the blockchain of eReuse.org.  In the example the three discs sum 95.000 hours]
-
+>**U: Usage hours per device D**    
+>U(D) = `&#8721` usage hours of all.red[*] hard drives used in D
+   
+<img src="./imgs/Hours-of-lifecycle-usage-per-device.jpeg" alt="drawing" width="300" align="middle" style="padding-left: 120px; padding-bottom: 20px;padding-top: 30px;padding-right: 20px"/>
 ]
 ---
 layout: false
 .left-column[
   ## Measures
-  ###Usage hours per device
-  ###Performance per device
+  ###Usage hours
+  ###Performance
 ]
 .right-column[
 <img src="./imgs/valueofuse.png" alt="drawing" width="150" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 10px;padding-right: 0px"/>
   ##Performance per device
 ***
-  ###A measure (evaluative) that score of the performance .red[*] of a device.
-> Aggregates in a single value the measures for all its components (disc, memory, processor, etc...). The resulting value ranges from 0 to 5, never reaching 5. 
+  ###A measure that indicates the performance rate of a device.
+   
+ A software collects the specifications of the components (disc, memory, processor, etc...), benchmarks and aggregates in a single performance rate
 
-[comment]: <> (For example, if the write speed of a hard drive is at percentile 10, this feature would get 10% of the possible points of the hard drive's speed feature. The characteristics of the components (e.g. write/read speed, size) and the components (e.g. disk, memory) are then merged together by weighted harmonic averages. )
-  
-  
-> A software collects the performance of the devices at component level and scores them according to a comparison with other devices registered in the system. 
+<img src="./imgs/performance-table.jpeg" alt="drawing" width="550" align="middle" style="padding-left: 0px; padding-bottom: 0px;padding-top: 10px;padding-right: 0px"/>
+
+[comment]: <> (.footnotetext[**Note**: .red[*] A software collects the specifications of the components (disc, memory, processor, etc...), benchmarks and aggregates in a single performance scoreThe resulting value ranges from 0 to 5, never reaching 5. The performance of a device over time tends to decay as its performance declines to lower percentiles.]For example, if the write speed of a hard drive is at percentile 10, this feature would get 10% of the possible points of the hard drive's speed feature. The characteristics of the components (e.g. write/read speed, size) and the components (e.g. disk, memory) are then merged together by weighted harmonic averages. )
+ 
 
 ]
 
-.footnotetext[**Note**: .red[*] The performance of a device over time tends to decay as its performance declines to lower percentiles.]
+
 
 ---
 .left-column[
   ## Measures
-  ###Usage hours per device
-  ###Performance per device
-  ###Devices in use per model
+  ###Usage hours
+  ###Performance
+  ###Devices in use and recycled
 
-]
-.right-column[
-<img src="./imgs/usage.png" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
-##Devices in use per model
-***
-###Indicates the number of devices the system knows are in use
-> TODO: Number of the devices in the traceability system with an acknowledge of use
-    
-> TODO: Cuando se recoge este valor
-[comment]: <> (...)
-
-]
----
-.left-column[
-  ## Measures
-  ###Usage hours per device
-  ###Performance per device
-  ###Devices in use per model
-  ###Devices recycled per model
 ]
 .right-column[
 <img src="./imgs/recycling.jpg" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 5px;padding-right: 3px"/>
-##Devices recycled per model
+<img src="./imgs/usage.png" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
+##Devices in use and recycled
 ***
-###Indicates the number of devices the system knows or assumes are recycled
-> TODO: Number of the devices in the traceability sistem with an acknowledge of recycling or without and acknoledge of of use
+###Indicates the number of devices the system knows are in use and recycled
+
+> **Devices in use per model**: Number of the devices in the traceability system with an acknowledge of use
     
-> TODO: Cuando se recoge este valor
-[comment]: <> (...)
+> **Devices recyled per model**: Number of the devices in the traceability system with an acknowledge of recycling or without and acknoledge of of use
+
+[comment]: <> (Number of the devices in the traceability system with an acknowledge of use and recycling)
 
 ]
 ---
 
 template: inverse
-## Metrics
+## Metrics: Combinations of multiple measurements
 ---
 
 .left-column[
   ## Metrics
-  ###Usage rate per model
+  ###Usage
 
 ]
 .right-column[
@@ -301,11 +287,9 @@ template: inverse
 ##Usage rate per model
 ***
 ###Indicates the rate of devices per model still in usage. 
-> **UM: The Usage rate per a given model M**   
-> UM(M) = (Devices in use per model <sub>M</sub>)  `&#47` (Total of devices per model <sub>M</sub>)   
-   
-> TODO: Cuando se recoge este valor
-[comment]: <> (More math symbols: https://sites.psu.edu/symbolcodes/codehtml/#math, More online charts in https://live.amcharts.com/new/edit/)
+> Devices in use per model <sub>M</sub>  `&#47` Total of devices per model <sub>M</sub> 
+
+[comment]: <> (Cuando se recoje este valor)
    
 
 <img src="./imgs/usage-rate.jpg" alt="drawing" width="500" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 10px;padding-right: 50px"/>
@@ -315,8 +299,8 @@ template: inverse
 ---
 .left-column[
   ## Metrics
-  ###Usage rate per model
-  ###Recycling rate per model
+  ###Usage
+  ###Recycling
 ]
 .right-column[
 <img src="./imgs/percentage.png" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
@@ -324,11 +308,9 @@ template: inverse
 ##Recycling rate per model
 ***
 ###Indicates the rate of devices recycled per model
-> **RM: The Recycling rate of a model M**   
-> RM(M) = (Devices recycled of model <sub>M</sub>)  `&#47` (Total of devices of model <sub>M</sub>)   
+>Devices recycled of model <sub>M</sub>  `&#47` Total of devices of model <sub>M</sub>
     
-> TODO: Cuando se recoge este valor
-[comment]: <> (More math symbols: https://sites.psu.edu/symbolcodes/codehtml/#math, More online charts in https://live.amcharts.com/new/edit/)
+[comment]: <> (Cuando se recoge este valor)
       
 
 <img src="./imgs/recycling-rate.jpg" alt="drawing" width="500" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 18px;padding-right: 50px"/>
@@ -338,18 +320,16 @@ template: inverse
 ---
 .left-column[
   ## Metrics
-  ###Usage rate per model
-  ###Recycling rate per model
-  ###Durability per model
+  ###Usage
+  ###Recycling
+  ###Durability
 ]
 .right-column[
-##Durability per model in usage hours
+##Durability per model
 ***
 ###Indicates the estimated duration of operation in hours that a device model can reach to have
 
->  **D: Durability per model M**   
-> D(M) = The 90th percentil of the lifecycle usage hours per model M
->   
+> The 90th percentil of the lifecycle usage hours per model M
 
 
 [comment]: <> (ccc)
@@ -367,17 +347,16 @@ template: inverse
 ---
 .left-column[
   ## Metrics
-  ###Usage rate per model
-  ###Recycling rate per model
-  ###Durability per model
-  ###Utilization per device
+  ###Usage
+  ###Recycling
+  ###Durability
+  ###Utilization
 ]
 .right-column[
-##Utilization per device
+##Utilization
 ***
 ###Indicates the extent to which this device has been used in hours compared to other devices of the same model
->**U: Utilization per device
->U(M) = Usage hours of a device  `&#47`  Durability of the device model (M)
+>Usage hours of a device  `&#47`  Durability of the device model (M)
     
 
 [comment]: <> (ccc)
@@ -394,14 +373,17 @@ template: inverse
 ---
 .left-column[
   ## Metrics
+  ###Usage
+  ###Recycling
+  ###Durability
+  ###Utilization
   ###Upgradeability
 ]
 .right-column[
-##Upgradeability per device
+##Upgradeability
 ***
 ###Indicates the potential for improvement that a device has.
->**UP: Upgradeability of a device**   
->P(M) = 1 – (Device Performance `&#47` Maximum Performance of Model M)   
+>1 – (Device Performance `&#47` Maximum Performance of Model M)  
 
 
 [comment]: <> (ccc)
@@ -414,11 +396,14 @@ template: inverse
 |HP ProBook 4500  	| Hp          | 3,93     | 3,95      | 1%               |
 ]
 
-.footnotetext[**Note**: .red[*] Per: Performance of a device or scoring of the performance of a device.]
 ]
 ---
 .left-column[
   ## Metrics
+  ###Usage
+  ###Recycling
+  ###Durability
+  ###Utilization
   ###Upgradeability
   ###Reusability
 ]
@@ -428,10 +413,10 @@ template: inverse
 ##Reusability
 ***
 ###Indicates how reusable a device is based in the remaining useful life
->**R: Reusability per device**   
->R(D) = % devices of the model still in use with similar performance
+>% devices of the model still in use with similar performance
+   
 
-
+#### Example:
 ```remark
 Before getting rid of my laptop Dell Latitude model E6440 
 with performance 3. I check that there are 70% of these
@@ -443,10 +428,11 @@ still in use.  I can safely say that it is 70% reusable.
 ]
 
 ---
+template: inverse
+## Compound Metrics: Combinations of multiple metrics
+---
 .left-column[
-  ## Metrics
-  ###Upgradeability
-  ###Reusability
+  ## Compount metrics
   ###Reusability Potential
 ]
 .right-column[
@@ -455,14 +441,13 @@ still in use.  I can safely say that it is 70% reusable.
 ***
 ###Indicates how reusable a device is if we upgrade it.
    
->**R: Reusability potential per device**   
->R(D) = % Devices of the model in use with upgraded performance
+>Current usage rate of a model with its maximum upgradeability performance
   
-
+#### Example:
 ```remark
 Before discard of my laptop Dell Latitude model E6440 
-with performance 3. I check that there are 90% of these with
-similar or upgraded value still in operation.
+with performance 3. I check that there are 90% of 
+these with similar or upgraded value still in operation.
 I can safely say that it is 90% potentially reusable.
 
 ```
@@ -474,9 +459,7 @@ I can safely say that it is 90% potentially reusable.
 ---
 
 .left-column[
-  ## Metrics
-  ###Upgradeability
-  ###Reusability
+  ## Compount metrics
   ###Reusability Potential
   ###Premature Recycling 
 ]
@@ -486,11 +469,10 @@ I can safely say that it is 90% potentially reusable.
 ***
 ###Indicates the reusability potential we are discarding if we recycle (destroy) the device.
    
->**PR: Premature Recycling per device**   
->PR(D) = Reusability Potential
-
+>Premature Recycling per device = Reusability Potential
    
 
+#### Example:
 ```remark
 I discard for recycling my laptop Dell Latitude 
 model E6440, with a 90% Reusability Potential.
@@ -504,9 +486,7 @@ I am prematurely recycling 90% of my laptop.
 ---
 
 .left-column[
-  ## Metrics
-  ###Upgradeability
-  ###Reusability
+  ## Compount metrics
   ###Reusability Potential
   ###Premature Recycling 
   ###Obsolescence of a model
@@ -517,86 +497,61 @@ I am prematurely recycling 90% of my laptop.
 ***
 ###Indicates the dificulty of using a device which, even having good performance, is in low utilization.
    
->**O(M): Obsolescence.red[*] of a model M**    
->O(M) = The difference between your model's recycling rate and the recycling rate of another model with similar _performance_
+>The difference between your model's _recycling rate_ and the lowest model _recycling rate_ with similar _performance_
    
 
 ```remark
-I have to discard my laptop model X with _performance_ 3, it 
-has a _recycling rate_ of 80%, instead, users of the Y model
-with the same _performance_ has a _recycling rate_ by 30%. 
-The obsolescence of my X model is at least of 50% (80%-30%).
+I have to discard my laptop model X with _performance_ 3, 
+it has a _recycling rate_ of 80%, instead, users of the 
+Y model with the same _performance_ has a 
+_recycling rate_ by 30%.  The obsolescence of my X 
+model is at least of 50% (80%-30%).
 ```
     
-[comment]: <> (ccc)
+[comment]: <> (A model should become obsolete because its performance is low and not for other reasons; that means there is some kind of obsolescence that not depends on performance of the model but factors such as impossibility to upgrade it, repair it, use it with other software, etc ...)
 
 ]
-.footnotetext[**Note**: .red[*] A model should become obsolete because its performance is low and not for other reasons; that means there is some kind of obsolescence that not depends on performance of the model but factors such as impossibility to upgrade it, repair it, use it with other software, etc ...]
+
 
 ---
-template: inverse
-## Conclusions and discussion
+#Summary of measures, metrics and compound metrics
+<img src="./imgs/measures-metrics-chart.png" alt="drawing" width="700" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 20px;padding-right: 50px"/>
 ---
-##Measures and metrics
-<img src="./imgs/measures-metrics-chart.png" alt="drawing" width="650" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 20px;padding-right: 50px"/>
----
-.left-column[
-  ## Conclusions
-  ###Measures and metrics
-  ###Circular Consumption
-]
-.right-column[
-##Circular Consumption and Production of Devices
-***
-###Consumers are able to use the same electronic devices for the longest time, either internally, or by collaborating with external agents so these devices are **reused** and **recycled** but not **prematurely**.
-   
->- Durability: choose the most durable.red[*] and try to upgrade them as possible.
->- Reusability Potential: choose partners that reuse your discarted devices and recycle them only when there are no Reusability Potential. Ask them for the device performance at the moment of recycling.
->- Obsolescence: choose devices that can run with standard software and components.
-[comment]: <> (ccc)
-
-]
-.footnotetext[**Note**: .red[*] For new models this approach do not let to know durability, consumers can base their election on brand durability history  ]
-
----
-.left-column[
-  ## Conclusions
-  ###Measures and metrics
-  ###Circular Consumption
-  ###Summary
-]
-.right-column[
-
-##Summary
- 1. Focus on durability, _performance_ of devices, and devices in use and recycled
- 2. Get durability from hard drives when these are erased
- 3. Get device performance when these are upgraded, discarted and recycled
- 4. Validated metrics with 3000 devices: Usage hours per device, durability, utilization, upgradeability. 
- 5. Not validated metrics because of lack of devices in use and recycled measures: reusability,obsolescence by model and premature recycling.
-   
+#Data and analysis
+### 1. Usage hours and performance measures are collected when hard drives are erased by reuse centers (20)
+### 2. Data collected: 3,045 observations during 3 years, 281 models of desktops and laptops
+### 3. Selected only those models for which we have at least 10 observations: 2,460 observations 
+### 4. Metrics durability, utilization and upgradeability has been validated.
+### 5. Devices recycled and in use measures will be collected to validate reusability, obsolescence and premature recycling.
+  
 [comment]: <> (Our approach to measuring circularity in the consumption and production of electronic devices is to focus on the performance achieved in their use phase.  Performing these measurements at certain times of their usage cycle and with their respective instruments we define the metrics proposed to measure the circularity of consumers and products.)
-   
-[comment]: <> ( We have four measures: the 1. usage hours, 2. performance, 3. usage rate, 4. recycling rate. In order to know the durability of the device in all its usage phases it is necessary to analyse all the hard drives it has had. The necessary instrument to collect the measurement of usage hours is a software that analyses the variables in the hard drive. In order to know the durability of the device throughout its usage phase, it is necessary to analyse all the hard drives it had. We propose that each time the data is wiped from the drive, either because there is a drive replacement or because it is reused by another user, the data erasure software employed notifies the serial number of the device, of the hard drive and the usage hours. Aggregating this information would allow to have all the hours of its usage cycles. When a hard disk is discarded, data is usually erased. We propose that it is just at the time of data erasure when data is reported: serial number of the hard disk, the serial number of the device and the hours made by the hard disk. Is it a trusted and irreversible data repository (a blockchain) the place where to store this information in order to be able to analyse it and know the total durability? DECIR QUE TENEMOS EL USAGE AND RECYCLING RATES PARA UN SUBCONJUNTO )
    
    
 [comment]: <> (The study carried out with more than 3,000 devices has allowed us to validate the metrics of: first cycle hours of use of the device, total hours of use of the device, durability of the model in hours of use, performance of the device in hours of use, maximum performance of the model and current upgradeability of the device. As there we do not have all information about model usage and recyling rates, , it has not been possible to validate the metrics of current reusability, potential, obsolescence by model and premature recycling.)
    
 ]
 ---
-.left-column[
-  ## Conclusions
-  ###Measures and metrics
-  ###Circular Consumption
-  ###Summary
-  ###Discussion and next steps
+template: inverse
+# Conclusions and discussion
+---
+[comment]: <> (## Reuse and recycling non prematurely digital devices)
+# Circular consumption of digital devices
+<img src="./imgs/use-reuse-recycle-loops-arrows.jpeg" alt="drawing" width="800" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 50px;padding-right: 70px"/>
+---
 
-]
-.right-column[
-##Discussion and next steps
- 1. For new models this approach do not let to know durability but consumers can base their election on brand durability history
- 2. Consumers base their election on brand durability history. Can this have an impact?
- 4. Use smart contracts to get acknowledge of use and recycling in exchange of economic incentives and low-cost devices
-]
+#Use metrics for taking betters decisions to archive circular consumption
+
+- ###Buy used devices with high _reusability potential_ and ensure it's _utilization_ , if you buy new products,  base your election on brand _durability_ history.
+   
+[comment]: <> (based on brand obsolescence and durability historics For new models this approach do not let to know durability, consumers can base their election on brand durability history ) 
+   
+- ###Before discarding the products try to upgrade it to the maximum _upgradeability_.
+   
+- ### Select reuse centers that ensure recycling only when the _reusability potential_ is low (non premature recycling).
+   
+
+[comment]: <> ( We have four measures: the 1. usage hours, 2. performance, 3. usage rate, 4. recycling rate. In order to know the durability of the device in all its usage phases it is necessary to analyse all the hard drives it has had. The necessary instrument to collect the measurement of usage hours is a software that analyses the variables in the hard drive. In order to know the durability of the device throughout its usage phase, it is necessary to analyse all the hard drives it had. We propose that each time the data is wiped from the drive, either because there is a drive replacement or because it is reused by another user, the data erasure software employed notifies the serial number of the device, of the hard drive and the usage hours. Aggregating this information would allow to have all the hours of its usage cycles. When a hard disk is discarded, data is usually erased. We propose that it is just at the time of data erasure when data is reported: serial number of the hard disk, the serial number of the device and the hours made by the hard disk. Is it a trusted and irreversible data repository (a blockchain) the place where to store this information in order to be able to analyse it and know the total durability? DECIR QUE TENEMOS EL USAGE AND RECYCLING RATES PARA UN SUBCONJUNTO )
+
 ---
 template: inverse
 ##An approach to measuring durability, upgradeability, reusability, obsolescence and premature recycling
