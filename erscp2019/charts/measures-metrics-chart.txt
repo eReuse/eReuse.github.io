@@ -1,18 +1,22 @@
-https://jsfiddle.net/2rfb8ne1/1/
+https://jsfiddle.net/h92jrt3d/
+
 
 chart.data = [
+ { from: "Usage rate", to: "Reuseability Potential", value: 1 },
+  { from: "Upgradeability", to: "Reuseability Potential", value: 1 },
+ 
   { from: "Usage hours", to: "Durability", value: 1 },  
   { from: "Usage hours", to: "Utilization ", value:1},    
   { from: "Performance", to: "Reusability", value: 1 },   
-  { from: "Devices recycled", to: "Recycling", value: 1 },  
+  { from: "Devices recycled", to: "Recycling rate", value: 1 },  
   { from: "Performance", to: "Upgradeability", value: 1 },  
   { from: "Performance", to: "Obsolescence", value: 1 },  
   { from: "Devices in use", to: "Upgradeability", value: 1 },  
   { from: "Devices in use", to: "Reusability", value: 1 },      
-  { from: "Devices in use", to: "Usage", value: 1 },      
-  { from: "Recycling", to: "Obsolescence", value: 1 },  
-  { from: "Upgradeability", to: "Premature Recycling", value: 1 },
-  { from: "Usage", to: "Premature Recycling", value: 1 }
+  { from: "Devices in use", to: "Usage rate", value: 1 },      
+  { from: "Recycling rate", to: "Obsolescence", value: 1 },  
+  { from: "Upgradeability", to: "Non Premature Recycling", value: 1 },
+  { from: "Recycling rate", to: "Non Premature Recycling", value: 1 }
   
 
 ];

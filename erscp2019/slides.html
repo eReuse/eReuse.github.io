@@ -156,7 +156,8 @@ class: center, middle, inverse
 
 [comment]: <> (Consumers use the same electronic devices for the longest time, either internally, or by collaborating with external agents so that these devices are reused and recycled properly, but recycled no prematurely, only when they can no longer be used or reused by anyone else. )
 
-.footnote[David Franquesa - david.franquesa@ac.upc.edu [Tecnical University of Catalonia ](https://www.upc.edu) and [ereuse.org](http://www.ereuse.org)]
+.footnote[David Franquesa - david.franquesa@ac.upc.edu [UPC-Technical University of Catalonia](https://www.upc.edu) and [Electronic Reuse - ereuse.org](http://www.ereuse.org)]
+
 ---
 layout:false
 # Circular consumption of digital devices
@@ -230,14 +231,16 @@ layout: false
   ###Performance
 ]
 .right-column[
-<img src="./imgs/valueofuse.png" alt="drawing" width="150" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 10px;padding-right: 0px"/>
   ##Performance per device
 ***
   ###A measure that indicates the performance rate of a device.
    
- A software collects the specifications of the components (disc, memory, processor, etc...), benchmarks and aggregates in a single performance rate
+ A software collects the specifications of the components (disc, memory, processor, etc...), benchmarks and aggregates in a single performance rate.
 
-<img src="./imgs/performance-table.jpeg" alt="drawing" width="550" align="middle" style="padding-left: 0px; padding-bottom: 0px;padding-top: 10px;padding-right: 0px"/>
+> **P: Performance of Device D**
+> P(D) = [0,5] 
+   
+The resulting value ranges from 0 to 5, never reaching 5. The performance of a device over time tends to decay as its performance declines.
 
 [comment]: <> (.footnotetext[**Note**: .red[*] A software collects the specifications of the components (disc, memory, processor, etc...), benchmarks and aggregates in a single performance scoreThe resulting value ranges from 0 to 5, never reaching 5. The performance of a device over time tends to decay as its performance declines to lower percentiles.]For example, if the write speed of a hard drive is at percentile 10, this feature would get 10% of the possible points of the hard drive's speed feature. The characteristics of the components (e.g. write/read speed, size) and the components (e.g. disk, memory) are then merged together by weighted harmonic averages. )
  
@@ -251,23 +254,41 @@ layout: false
   ## Measures
   ###Usage hours
   ###Performance
-  ###Devices in use and recycled
+  ###Devices in use
+
+]
+.right-column[
+<img src="./imgs/usage.png" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
+##Devices in use per model
+***
+###Indicates the number of devices the system knows are in use per model
+
+> **Devices in use per model**: Number of the devices in the traceability system with a proof of use
+    
+[comment]: <> (Number of the devices in the traceability system with a proof of use and recycling)
+]
+---
+
+.left-column[
+  ## Measures
+  ###Usage hours
+  ###Performance
+  ###Devices in use
+  ###Devices recycled
 
 ]
 .right-column[
 <img src="./imgs/recycling.jpg" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 5px;padding-right: 3px"/>
-<img src="./imgs/usage.png" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
-##Devices in use and recycled
+##Devices recycled
 ***
-###Indicates the number of devices the system knows are in use and recycled
-
-> **Devices in use per model**: Number of the devices in the traceability system with an acknowledge of use
+###Indicates the number of devices the system knows are recycled
     
-> **Devices recyled per model**: Number of the devices in the traceability system with an acknowledge of recycling or without and acknoledge of of use
+> **Devices recyled per model**: Number of the devices in the traceability system with a proof of recycling or without a proof of use
 
-[comment]: <> (Number of the devices in the traceability system with an acknowledge of use and recycling)
+[comment]: <> (Number of the devices in the traceability system with a proof of use and recycling)
 
 ]
+
 ---
 
 template: inverse
@@ -278,11 +299,11 @@ template: inverse
   ###Durability    
 ]
 .right-column[
-##Durability per model
+##Durability
 ***
 ###Indicates the estimated duration of operation in hours that a device model can reach to have
 
-> The 90th percentil of the lifecycle usage hours per model M
+> The 90th percentil of the lifecycle usage hours per model
 
 
 [comment]: <> (ccc)
@@ -353,7 +374,7 @@ template: inverse
 ##Utilization
 ***
 ###Indicates the extent to which this device has been used in hours compared to other devices of the same model
->Usage hours of a device  `&#47`  Durability of the device model (M)
+>Usage hours of a device  `&#47`  Durability of the device model
     
 
 [comment]: <> (ccc)
@@ -410,7 +431,7 @@ template: inverse
 ##Reusability
 ***
 ###Indicates how reusable a device is based in the current performance
->% devices of the model still in use with similar performance
+>Usage rate of devices per model and similar performance still in use
    
 
 #### Example:
@@ -438,7 +459,7 @@ template: inverse
 ***
 ###Indicates how reusable a device is if we upgrade its performance.
    
->Current usage rate of a model with its maximum upgradeability performance
+>Usage rate of devices per model with its maximum upgradeability performance
   
 #### Example:
 ```remark
@@ -512,15 +533,15 @@ model is at least of 50% (80%-30%).
 
 
 ---
-#Summary of measures, metrics and compound metrics
+#Summary of measures and metrics
 <img src="./imgs/measures-metrics-chart.png" alt="drawing" width="700" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 20px;padding-right: 50px"/>
 ---
 #Data and analysis
 ### 1. Data collection: Usage hours and performance measures are collected when hard drives are erased by reuse centers (20)
 ### 2. Data set: A total of 3,045 observations (devices) during 3 years, 281 models of desktops and laptops
 ### 3. Data filtering: We selected only those models for which we have at least 10 observations: 2,460 observations 
-### 4. Metrics Validation: durability, utilization and upgradeability has been validated.
-### 5. Next steps: Devices recycled and in use measures will be collected to validate others metrics.
+### 4. Metrics validation: durability, utilization and upgradeability has been validated.
+### 5. Next steps: Devices recycled and in use measures will be collected to validate remaining metrics.
      
 [comment]: <> (This is the process we have followed)
 
@@ -533,9 +554,9 @@ template: inverse
 <img src="./imgs/use-reuse-recycle-loops-arrows.jpeg" alt="drawing" width="800" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 50px;padding-right: 70px"/>
 ---
 
-#Use metrics for taking betters decisions to archive circular consumption
+#Use metrics for taking betters decisions to achive circular consumption
 
-- ###Buy used devices with high _reusability potential_ and ensure it's _utilization_ , if you buy new products,  base your election on brand _durability_ history.
+- ###Buy used devices with high _reusability potential_ and ensure its _utilization_ , if you buy new products,  base your election on brand _durability_ history.
    
 [comment]: <> (based on brand obsolescence and durability historics For new models this approach do not let to know durability, consumers can base their election on brand durability history ) 
    
@@ -548,7 +569,8 @@ template: inverse
 
 [comment]: <> ( We have four measures: the 1. usage hours, 2. performance, 3. usage rate, 4. recycling rate. In order to know the durability of the device in all its usage phases it is necessary to analyse all the hard drives it has had. The necessary instrument to collect the measurement of usage hours is a software that analyses the variables in the hard drive. In order to know the durability of the device throughout its usage phase, it is necessary to analyse all the hard drives it had. We propose that each time the data is wiped from the drive, either because there is a drive replacement or because it is reused by another user, the data erasure software employed notifies the serial number of the device, of the hard drive and the usage hours. Aggregating this information would allow to have all the hours of its usage cycles. When a hard disk is discarded, data is usually erased. We propose that it is just at the time of data erasure when data is reported: serial number of the hard disk, the serial number of the device and the hours made by the hard disk. Is it a trusted and irreversible data repository (a blockchain) the place where to store this information in order to be able to analyse it and know the total durability? DECIR QUE TENEMOS EL USAGE AND RECYCLING RATES PARA UN SUBCONJUNTO )
 
-.footnote[David Franquesa - david.franquesa@ac.upc.edu [Tecnical University of Catalonia ](https://www.upc.edu) and [ereuse.org](http://www.ereuse.org)]
+.footnote[David Franquesa - david.franquesa@ac.upc.edu]
+
 
 ---
 template: inverse
@@ -557,7 +579,9 @@ template: inverse
 
 [comment]: <> (Consumers use the same electronic devices for the longest time, either internally, or by collaborating with external agents so that these devices are reused and recycled properly, but recycled no prematurely, only when they can no longer be used or reused by anyone else. )
 
-.footnote[David Franquesa - david.franquesa@ac.upc.edu [Tecnical University of Catalonia ](https://www.upc.edu) and [ereuse.org](http://www.ereuse.org)]
+.footnote[David Franquesa - david.franquesa@ac.upc.edu [UPC-Technical University of Catalonia](https://www.upc.edu) and [Electronic Reuse - ereuse.org](http://www.ereuse.org)]
+
+
 
 ---
 template: inverse
