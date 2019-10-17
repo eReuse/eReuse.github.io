@@ -156,7 +156,13 @@ class: center, middle, inverse
 
 [comment]: <> (Consumers use the same electronic devices for the longest time, either internally, or by collaborating with external agents so that these devices are reused and recycled properly, but recycled no prematurely, only when they can no longer be used or reused by anyone else. )
 
-.footnote[Go to [project site](https://www.ereuse.org)]
+.footnote[David Franquesa david.franquesa@ac.upc.edu [Tecnical University of Catalonia ](https://www.upc.edu) and [ereuse.org](http://www.ereuse.org)]
+---
+layout:false
+# Circular consumption of digital devices
+[comment]: <> (Introducir el contexto: grandes organizaciones que descartan productos, explicar el proceso de refurbishment)
+<img src="./imgs/use-reuse-recycle-loops.png" alt="drawing" width="800" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 50px;padding-right: 70px"/>
+
 ---
 layout: false
 .left-column[
@@ -165,22 +171,14 @@ layout: false
 ]
 .right-column[
 <img src="./imgs/space-transparent-10x10.png" alt="drawing" width="100" height="20" style="padding-left: 0px; padding-bottom: 0px;padding-top: 46px;padding-right: 0px"/>
-- ##Introduction
+- ##Problem
 - ##Questions
-- ##Measures
-- ##Metrics
-- ##Compound Metrics
+- ##Measures and metrics
 - ##Data and analysis
 - ##Conclusions
 
 [comment]: <> (4234)
 ]
----
-[comment]: <> (## Reuse and recycling non prematurely digital devices)
-# Circular consumption of digital devices
-[comment]: <> (Introducir el contexto: grandes organizaciones que descartan productos, explicar el proceso de refurbishment)
-<img src="./imgs/use-reuse-recycle-loops.png" alt="drawing" width="800" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 50px;padding-right: 70px"/>
-
 ---
 [comment]: <> (## Reuse and recycling non prematurely digital devices)
 # Circular consumption of digital devices
@@ -191,9 +189,9 @@ layout: false
 layout: false
 # Questions
 ***
-- ## Buy: How to choose the brands with the highest durability and the low obsolescence?
-- ## Usage: How to know if your device can be upgraded before discarding it?
-- ## Discard: How to choose reuse centers with non premature recycling practices?
+- ## Buy: How to choose the brands with the highest durability rate?
+- ## Usage: How much my device can be upgraded?
+- ## Discard: How to choose reuse centers with highest non premature recycling practices?
 
 [comment]: <> (4234)
 ---
@@ -275,54 +273,9 @@ layout: false
 template: inverse
 ## Metrics: Combinations of multiple measurements
 ---
-
 .left-column[
   ## Metrics
-  ###Usage
-
-]
-.right-column[
-<img src="./imgs/percentage.png" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
-<img src="./imgs/usage.png" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
-##Usage rate per model
-***
-###Indicates the rate of devices per model still in usage. 
-> Devices in use per model <sub>M</sub>  `&#47` Total of devices per model <sub>M</sub> 
-
-[comment]: <> (Cuando se recoje este valor)
-   
-
-<img src="./imgs/usage-rate.jpg" alt="drawing" width="500" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 10px;padding-right: 50px"/>
-
-]
-
----
-.left-column[
-  ## Metrics
-  ###Usage
-  ###Recycling
-]
-.right-column[
-<img src="./imgs/percentage.png" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
-<img src="./imgs/recycling.jpg" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 5px;padding-right: 3px"/>
-##Recycling rate per model
-***
-###Indicates the rate of devices recycled per model
->Devices recycled of model <sub>M</sub>  `&#47` Total of devices of model <sub>M</sub>
-    
-[comment]: <> (Cuando se recoge este valor)
-      
-
-<img src="./imgs/recycling-rate.jpg" alt="drawing" width="500" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 18px;padding-right: 50px"/>
-
-]
-
----
-.left-column[
-  ## Metrics
-  ###Usage
-  ###Recycling
-  ###Durability
+  ###Durability    
 ]
 .right-column[
 ##Durability per model
@@ -347,9 +300,53 @@ template: inverse
 ---
 .left-column[
   ## Metrics
+  ###Durability    
+  ###Usage
+
+]
+.right-column[
+<img src="./imgs/percentage.png" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
+<img src="./imgs/usage.png" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
+##Usage rate per model
+***
+###Indicates the rate of devices per model still in usage. 
+> Devices in use per model <sub>M</sub>  `&#47` Total of devices per model <sub>M</sub> 
+
+[comment]: <> (Cuando se recoje este valor)
+   
+
+<img src="./imgs/usage-rate.jpg" alt="drawing" width="500" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 10px;padding-right: 50px"/>
+
+]
+
+---
+.left-column[
+  ## Metrics
+  ###Durability    
   ###Usage
   ###Recycling
-  ###Durability
+]
+.right-column[
+<img src="./imgs/percentage.png" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
+<img src="./imgs/recycling.jpg" alt="drawing" width="50" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 5px;padding-right: 3px"/>
+##Recycling rate per model
+***
+###Indicates the rate of devices recycled per model
+>Devices recycled of model <sub>M</sub>  `&#47` Total of devices of model <sub>M</sub>
+    
+[comment]: <> (Cuando se recoge este valor)
+      
+
+<img src="./imgs/recycling-rate.jpg" alt="drawing" width="500" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 18px;padding-right: 50px"/>
+
+]
+
+---
+.left-column[
+  ## Metrics
+  ###Durability    
+  ###Usage
+  ###Recycling
   ###Utilization
 ]
 .right-column[
@@ -373,9 +370,9 @@ template: inverse
 ---
 .left-column[
   ## Metrics
+  ###Durability
   ###Usage
   ###Recycling
-  ###Durability
   ###Utilization
   ###Upgradeability
 ]
@@ -400,9 +397,9 @@ template: inverse
 ---
 .left-column[
   ## Metrics
+  ###Durability
   ###Usage
   ###Recycling
-  ###Durability
   ###Utilization
   ###Upgradeability
   ###Reusability
@@ -412,7 +409,7 @@ template: inverse
 
 ##Reusability
 ***
-###Indicates how reusable a device is based in the remaining useful life
+###Indicates how reusable a device is based in the current performance
 >% devices of the model still in use with similar performance
    
 
@@ -439,7 +436,7 @@ template: inverse
 <img src="./imgs/dell-latitude-e6440.jpg" alt="drawing" width="80" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
 ##Reusability Potential
 ***
-###Indicates how reusable a device is if we upgrade it.
+###Indicates how reusable a device is if we upgrade its performance.
    
 >Current usage rate of a model with its maximum upgradeability performance
   
@@ -461,22 +458,23 @@ I can safely say that it is 90% potentially reusable.
 .left-column[
   ## Compount metrics
   ###Reusability Potential
-  ###Premature Recycling 
+  ###Non Premature Recycling 
 ]
 .right-column[
 <img src="./imgs/dell-latitude-e6440.jpg" alt="drawing" width="80" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
-##Premature Recycling 
+##Non Premature Recycling 
 ***
 ###Indicates the reusability potential we are discarding if we recycle (destroy) the device.
    
->Premature Recycling per device = Reusability Potential
+>Non Premature Recycling of a device = Reusability Potential
    
 
 #### Example:
 ```remark
-I discard for recycling my laptop Dell Latitude 
+I don't recycle my laptop Dell Latitude 
 model E6440, with a 90% Reusability Potential.
-I am prematurely recycling 90% of my laptop.
+I am non prematurely recycling 90% 
+of my laptop.
 ```
 
 [comment]: <> (ccc)
@@ -518,18 +516,14 @@ model is at least of 50% (80%-30%).
 <img src="./imgs/measures-metrics-chart.png" alt="drawing" width="700" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 20px;padding-right: 50px"/>
 ---
 #Data and analysis
-### 1. Usage hours and performance measures are collected when hard drives are erased by reuse centers (20)
-### 2. Data collected: 3,045 observations during 3 years, 281 models of desktops and laptops
-### 3. Selected only those models for which we have at least 10 observations: 2,460 observations 
-### 4. Metrics durability, utilization and upgradeability has been validated.
-### 5. Devices recycled and in use measures will be collected to validate reusability, obsolescence and premature recycling.
-  
-[comment]: <> (Our approach to measuring circularity in the consumption and production of electronic devices is to focus on the performance achieved in their use phase.  Performing these measurements at certain times of their usage cycle and with their respective instruments we define the metrics proposed to measure the circularity of consumers and products.)
-   
-   
-[comment]: <> (The study carried out with more than 3,000 devices has allowed us to validate the metrics of: first cycle hours of use of the device, total hours of use of the device, durability of the model in hours of use, performance of the device in hours of use, maximum performance of the model and current upgradeability of the device. As there we do not have all information about model usage and recyling rates, , it has not been possible to validate the metrics of current reusability, potential, obsolescence by model and premature recycling.)
-   
-]
+### 1. Data collection: Usage hours and performance measures are collected when hard drives are erased by reuse centers (20)
+### 2. Data set: A total of 3,045 observations (devices) during 3 years, 281 models of desktops and laptops
+### 3. Data filtering: We selected only those models for which we have at least 10 observations: 2,460 observations 
+### 4. Metrics Validation: durability, utilization and upgradeability has been validated.
+### 5. Next steps: Devices recycled and in use measures will be collected to validate others metrics.
+     
+[comment]: <> (This is the process we have followed)
+
 ---
 template: inverse
 # Conclusions and discussion
@@ -549,8 +543,12 @@ template: inverse
    
 - ### Select reuse centers that ensure recycling only when the _reusability potential_ is low (non premature recycling).
    
+[comment]: <> (Our approach to measuring circularity in the consumption and production of electronic devices is to focus on the performance achieved in their use phase.  Performing these measurements at certain times of their usage cycle and with their respective instruments we define the metrics proposed to measure the circularity of consumers and products.)
+   
 
 [comment]: <> ( We have four measures: the 1. usage hours, 2. performance, 3. usage rate, 4. recycling rate. In order to know the durability of the device in all its usage phases it is necessary to analyse all the hard drives it has had. The necessary instrument to collect the measurement of usage hours is a software that analyses the variables in the hard drive. In order to know the durability of the device throughout its usage phase, it is necessary to analyse all the hard drives it had. We propose that each time the data is wiped from the drive, either because there is a drive replacement or because it is reused by another user, the data erasure software employed notifies the serial number of the device, of the hard drive and the usage hours. Aggregating this information would allow to have all the hours of its usage cycles. When a hard disk is discarded, data is usually erased. We propose that it is just at the time of data erasure when data is reported: serial number of the hard disk, the serial number of the device and the hours made by the hard disk. Is it a trusted and irreversible data repository (a blockchain) the place where to store this information in order to be able to analyse it and know the total durability? DECIR QUE TENEMOS EL USAGE AND RECYCLING RATES PARA UN SUBCONJUNTO )
+
+.footnote[David Franquesa - david.franquesa@ac.upc.edu [Tecnical University of Catalonia ](https://www.upc.edu) and [ereuse.org](http://www.ereuse.org)]
 
 ---
 template: inverse
@@ -559,7 +557,8 @@ template: inverse
 
 [comment]: <> (Consumers use the same electronic devices for the longest time, either internally, or by collaborating with external agents so that these devices are reused and recycled properly, but recycled no prematurely, only when they can no longer be used or reused by anyone else. )
 
-.footnote[Go to [project site](https://www.ereuse.org)]
+.footnote[David Franquesa - david.franquesa@ac.upc.edu [Tecnical University of Catalonia ](https://www.upc.edu) and [ereuse.org](http://www.ereuse.org)]
+
 ---
 template: inverse
 ## Backup
