@@ -533,8 +533,8 @@ model is at least of 50% (80%-30%).
 
 
 ---
-#Summary of measures and metrics
-<img src="./imgs/measures-metrics-chart.png" alt="drawing" width="700" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 20px;padding-right: 50px"/>
+##Summary of measures and metrics
+<img src="./imgs/measures-metrics-chart.png" alt="drawing" height="500" width="750" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 0px;padding-right: 50px"/>
 ---
 #Data and analysis
 ### 1. Data collection: Usage hours and performance measures are collected when hard drives are erased by reuse centers (20)
@@ -569,7 +569,7 @@ template: inverse
 
 [comment]: <> ( We have four measures: the 1. usage hours, 2. performance, 3. usage rate, 4. recycling rate. In order to know the durability of the device in all its usage phases it is necessary to analyse all the hard drives it has had. The necessary instrument to collect the measurement of usage hours is a software that analyses the variables in the hard drive. In order to know the durability of the device throughout its usage phase, it is necessary to analyse all the hard drives it had. We propose that each time the data is wiped from the drive, either because there is a drive replacement or because it is reused by another user, the data erasure software employed notifies the serial number of the device, of the hard drive and the usage hours. Aggregating this information would allow to have all the hours of its usage cycles. When a hard disk is discarded, data is usually erased. We propose that it is just at the time of data erasure when data is reported: serial number of the hard disk, the serial number of the device and the hours made by the hard disk. Is it a trusted and irreversible data repository (a blockchain) the place where to store this information in order to be able to analyse it and know the total durability? DECIR QUE TENEMOS EL USAGE AND RECYCLING RATES PARA UN SUBCONJUNTO )
 
-.footnote[David Franquesa - david.franquesa@ac.upc.edu [UPC - Technical University of Catalonia ](https://www.upc.edu) / [ereuse.org](http://www.ereuse.org)]
+.footnote[David Franquesa - david.franquesa@ac.upc.edu]
 
 
 ---
@@ -579,7 +579,8 @@ template: inverse
 
 [comment]: <> (Consumers use the same electronic devices for the longest time, either internally, or by collaborating with external agents so that these devices are reused and recycled properly, but recycled no prematurely, only when they can no longer be used or reused by anyone else. )
 
-.footnote[David Franquesa - david.franquesa@ac.upc.edu [UPC - Technical University of Catalonia ](https://www.upc.edu) / [ereuse.org](http://www.ereuse.org)]
+.footnote[David Franquesa - david.franquesa@ac.upc.edu [UPC-Technical University of Catalonia](https://www.upc.edu) and [Electronic Reuse - ereuse.org](http://www.ereuse.org)]
+
 
 
 ---
