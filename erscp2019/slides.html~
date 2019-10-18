@@ -327,7 +327,7 @@ template: inverse
 .right-column[
 ##Utilization
 ***
-###Indicates to what extent this device has been used in hours by comparission to other devices of the same model
+###Indicates to what extent this device has been used in hours by comparison with durable devices of the same model
 >Usage hours of a device  `&#47`  Durability of the device model
     
 
