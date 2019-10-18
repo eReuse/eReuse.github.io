@@ -156,7 +156,7 @@ class: center, middle, inverse
 
 [comment]: <> (Consumers use the same electronic devices for the longest time, either internally, or by collaborating with external agents so that these devices are reused and recycled properly, but recycled no prematurely, only when they can no longer be used or reused by anyone else. )
 
-.footnote[David Franquesa - david.franquesa@ac.upc.edu [UPC-Technical University of Catalonia](https://www.upc.edu) and [Electronic Reuse - ereuse.org](http://www.ereuse.org)]
+.footnote[David Franquesa - david.franquesa@ac.upc.edu [UPC-Technical University of Catalonia](https://www.upc.edu) and [Electronic Reuse - ereuse.org](http://www.ereuse.org) - slides: [bit.ly/2Mr6J5y](http://bit.ly/2Mr6J5y) ]
 
 ---
 layout:false
@@ -299,9 +299,9 @@ template: inverse
   ###Durability    
 ]
 .right-column[
-##Durability
+##Maximum Durability 
 ***
-###Indicates the estimated duration of operation in hours that a device model can reach to have
+###Indicates the maximum estimated duration of operation in hours that a device model can reach to have
 
 > The 90th percentil of the lifecycle usage hours per model
 
@@ -312,9 +312,9 @@ template: inverse
 .first[
 	Model                      | Manufacturer  | Model Durability
 	------------------------------ | --------------------- | -------------
-	7000                       | Lenovo           | 53.534
-	EB1007      	       | Asus      	       | 51.145 	
-	HP Compaq 6005    | Hp                  | 44.198 	
+	7000                       | Lenovo           | 53,534
+	EB1007      	       | Asus      	       | 51,145 	
+	HP Compaq 6005    | Hp                  | 44,198 	
 	]
 ]
 
@@ -322,6 +322,58 @@ template: inverse
 .left-column[
   ## Metrics
   ###Durability    
+  ###Utilization
+]
+.right-column[
+##Utilization
+***
+###Indicates to what extent to which this device has been used in hours compared to other devices of the same model
+>Usage hours of a device  `&#47`  Durability of the device model
+    
+
+[comment]: <> (ccc)
+
+.first[
+
+|Model|Man.|Device Usage| Model Durability|Device Utilization|
+| :-----: | :--- :| :-----------------: | :----------------------: | :----------------------: |
+|Veriton M400|Acer|65,332 h.| 30,043 h.   |217%|
+|HP Compaq 6005 Pro|Hp| 64,228  h. | 44,198 h.|145% |
+]
+]
+
+---
+.left-column[
+  ## Metrics
+  ###Durability
+  ###Utilization
+  ###Upgradeability
+]
+.right-column[
+##Upgradeability
+***
+###Indicates the potential for improvement that a device has.
+>1 – (Device Performance `&#47` Maximum Performance of Model M)  
+
+
+[comment]: <> (ccc)
+   
+.first[
+   
+|Model                      |Man.        |Per.       |Max Per.|Upgradeability|
+| :--------------------------:  | :-----------: | :---------: | :----------: | :-----------------: |
+|Latitude E6300  	| Dell   	| 1.66     | 3.92      | 58%             |
+|HP ProBook 4500  	| Hp          | 3.93     | 3.95      | 1%               |
+]
+
+]
+
+---
+.left-column[
+  ## Metrics
+  ###Durability    
+  ###Utilization
+  ###Upgradeability
   ###Usage
 
 ]
@@ -344,6 +396,8 @@ template: inverse
 .left-column[
   ## Metrics
   ###Durability    
+  ###Utilization
+  ###Upgradeability
   ###Usage
   ###Recycling
 ]
@@ -365,64 +419,11 @@ template: inverse
 ---
 .left-column[
   ## Metrics
-  ###Durability    
-  ###Usage
-  ###Recycling
-  ###Utilization
-]
-.right-column[
-##Utilization
-***
-###Indicates the extent to which this device has been used in hours compared to other devices of the same model
->Usage hours of a device  `&#47`  Durability of the device model
-    
-
-[comment]: <> (ccc)
-
-.first[
-
-|Model|Man.|Device Usage| Model Durability|Device Utilization|
-| :-----: | :--- :| :-----------------: | :----------------------: | :----------------------: |
-|Veriton M400|Acer|65.332 h.| 30.043 h.   |217%|
-|HP Compaq 6005 Pro|Hp| 64.228  h. | 44.198 h.|145% |
-]
-]
-
----
-.left-column[
-  ## Metrics
   ###Durability
-  ###Usage
-  ###Recycling
   ###Utilization
   ###Upgradeability
-]
-.right-column[
-##Upgradeability
-***
-###Indicates the potential for improvement that a device has.
->1 – (Device Performance `&#47` Maximum Performance of Model M)  
-
-
-[comment]: <> (ccc)
-   
-.first[
-   
-|Model                      |Man.        |Per.       |Max Per.|Upgradeability|
-| :--------------------------:  | :-----------: | :---------: | :----------: | :-----------------: |
-|Latitude E6300  	| Dell   	| 1,66     | 3,92      | 58%             |
-|HP ProBook 4500  	| Hp          | 3,93     | 3,95      | 1%               |
-]
-
-]
----
-.left-column[
-  ## Metrics
-  ###Durability
   ###Usage
   ###Recycling
-  ###Utilization
-  ###Upgradeability
   ###Reusability
 ]
 .right-column[
@@ -430,13 +431,13 @@ template: inverse
 
 ##Reusability
 ***
-###Indicates how reusable a device is based in the current performance
+###Indicates to what extent a device can be used with its current performance
 >Usage rate of devices per model and similar performance still in use
    
 
 #### Example:
 ```remark
-Before getting rid of my laptop Dell Latitude model E6440 
+Before discarting my laptop Dell Latitude model E6440 
 with performance 3. I check that there are 70% of these
 still in use.  I can safely say that it is 70% reusable.
 ```
@@ -457,7 +458,7 @@ template: inverse
 <img src="./imgs/dell-latitude-e6440.jpg" alt="drawing" width="80" align="right" style="padding-left: 0px; padding-bottom: 0px;padding-top: 0px;padding-right: 0px"/>
 ##Reusability Potential
 ***
-###Indicates how reusable a device is if we upgrade its performance.
+###Indicates to what extent a device can be used with its upgraded performance
    
 >Usage rate of devices per model with its maximum upgradeability performance
   
@@ -507,7 +508,7 @@ of my laptop.
 .left-column[
   ## Compount metrics
   ###Reusability Potential
-  ###Premature Recycling 
+  ###Non Premature Recycling 
   ###Obsolescence of a model
 ]
 .right-column[
@@ -537,11 +538,11 @@ model is at least of 50% (80%-30%).
 <img src="./imgs/measures-metrics-chart.png" alt="drawing" height="500" width="750" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 10px;padding-right: 50px"/>
 ---
 #Data and analysis
-### 1. Data collection: Usage hours and performance measures are collected when hard drives are erased by reuse centers (20)
+### 1. Data collection: Usage hours and performance measures are collected when hard drives are erased or devices are upgradesd by reuse centers (20)
 ### 2. Data set: A total of 3,045 observations (devices) during 3 years, 281 models of desktops and laptops
 ### 3. Data filtering: We selected only those models for which we have at least 10 observations: 2,460 observations 
-### 4. Metrics validation: durability, utilization and upgradeability has been validated.
-### 5. Next steps: Devices recycled and in use measures will be collected to validate remaining metrics.
+### 4. Metrics validation: Durability, utilization and upgradeability has been validated.
+### 5. Next steps: Analise recycled and in use rate measures to validate remaining metrics.
      
 [comment]: <> (This is the process we have followed)
 
@@ -550,11 +551,11 @@ template: inverse
 # Conclusions and discussion
 ---
 [comment]: <> (## Reuse and recycling non prematurely digital devices)
-# Circular consumption of digital devices
+## Three key moments where consumers decisions impact on circular consumption
 <img src="./imgs/use-reuse-recycle-loops-arrows.jpeg" alt="drawing" width="800" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 50px;padding-right: 70px"/>
 ---
 
-#Use metrics for taking betters decisions to achive circular consumption
+##Metrics for helping to taking better circular consumption decisions
 
 - ###Buy used devices with high _reusability potential_ and ensure its _utilization_ , if you buy new products,  base your election on brand _durability_ history.
    
@@ -584,9 +585,6 @@ template: inverse
 
 
 ---
-template: inverse
-## Backup
-
     </textarea>
     <script src="js/remark-latest.min.js"></script>
     <script>
