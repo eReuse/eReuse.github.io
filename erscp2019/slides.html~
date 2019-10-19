@@ -152,11 +152,11 @@ layout: true
 class: center, middle, inverse
 ---
 ##An approach to measuring durability, upgradeability, reusability, obsolescence and premature recycling
-###Circular Consumption and Production of Devices
+###Circular Consumption of Digital Devices
 
 [comment]: <> (Consumers use the same electronic devices for the longest time, either internally, or by collaborating with external agents so that these devices are reused and recycled properly, but recycled no prematurely, only when they can no longer be used or reused by anyone else. )
 
-.footnote[David Franquesa - david.franquesa@ac.upc.edu [UPC-Technical University of Catalonia](https://www.upc.edu) and [Electronic Reuse - ereuse.org](http://www.ereuse.org) - slides: [bit.ly/2Mr6J5y](http://bit.ly/2Mr6J5y) ]
+.footnote[[Electronic Reuse - ereuse.org](http://www.ereuse.org) hello@ereuse.org]
 
 ---
 layout:false
@@ -310,11 +310,11 @@ template: inverse
    
 
 .first[
-	Model                      | Manufacturer  | Model Durability
-	------------------------------ | --------------------- | -------------
-	7000                       | Lenovo           | 53,534
-	EB1007      	       | Asus      	       | 51,145 	
-	HP Compaq 6005    | Hp                  | 44,198 	
+	|Model                      | Manufacturer  | Model Durability|
+	| :--------------------------:  | :-------------------: | :----------------------: |
+	|7000                        | Lenovo           | 53,534|
+	|EB1007        	        | Asus               | 51,145 |	
+	|HP Compaq 6005     | Hp                   | 44,198 |	
 	]
 ]
 
@@ -335,11 +335,11 @@ template: inverse
 
 .first[
 
-|Model|Man.|Device Usage| Model Durability|Device Utilization|
-| :-----: | :--- :| :-----------------: | :----------------------: | :----------------------: |
-|Veriton M400|Acer|65,332 h.| 30,043 h.   |217%|
-|HP Compaq 6005 Pro|Hp| 64,228  h. | 44,198 h.|145% |
-]
+	|Model|Man.|Device Usage| Model Durability|Device Utilization|
+	| :--------------------------:  | :-----------: | :---------: | :----------: | :-----------------: |	
+	|Veriton M400|Acer|65,332 h.| 30,043 h.   |217%|
+	|HP Compaq 6005 Pro|Hp| 64,228  h. | 44,198 h.|145% |
+	]
 ]
 
 ---
@@ -538,7 +538,7 @@ model is at least of 50% (80%-30%).
 <img src="./imgs/measures-metrics-chart.png" alt="drawing" height="500" width="750" align="middle" style="padding-left: 0px; padding-bottom: 20px;padding-top: 10px;padding-right: 50px"/>
 ---
 #Data and analysis
-### 1. Data collection: Usage hours and performance measures are collected when hard drives are erased or devices are upgradesd by reuse centers (20)
+### 1. Data collection: Usage hours and performance measures are collected when hard drives are erased or devices are upgraded by reuse centers (20)
 ### 2. Data set: A total of 3,045 observations (devices) during 3 years, 281 models of desktops and laptops
 ### 3. Data filtering: We selected only those models for which we have at least 10 observations: 2,460 observations 
 ### 4. Metrics validation: Durability, utilization and upgradeability has been validated.
@@ -569,19 +569,14 @@ template: inverse
    
 
 [comment]: <> ( We have four measures: the 1. usage hours, 2. performance, 3. usage rate, 4. recycling rate. In order to know the durability of the device in all its usage phases it is necessary to analyse all the hard drives it has had. The necessary instrument to collect the measurement of usage hours is a software that analyses the variables in the hard drive. In order to know the durability of the device throughout its usage phase, it is necessary to analyse all the hard drives it had. We propose that each time the data is wiped from the drive, either because there is a drive replacement or because it is reused by another user, the data erasure software employed notifies the serial number of the device, of the hard drive and the usage hours. Aggregating this information would allow to have all the hours of its usage cycles. When a hard disk is discarded, data is usually erased. We propose that it is just at the time of data erasure when data is reported: serial number of the hard disk, the serial number of the device and the hours made by the hard disk. Is it a trusted and irreversible data repository (a blockchain) the place where to store this information in order to be able to analyse it and know the total durability? DECIR QUE TENEMOS EL USAGE AND RECYCLING RATES PARA UN SUBCONJUNTO )
-
-.footnote[David Franquesa - david.franquesa@ac.upc.edu]
-
-
 ---
 template: inverse
 ##An approach to measuring durability, upgradeability, reusability, obsolescence and premature recycling
-###Circular Consumption and Production of Devices
+###Circular Consumption of Digital Devices
 
 [comment]: <> (Consumers use the same electronic devices for the longest time, either internally, or by collaborating with external agents so that these devices are reused and recycled properly, but recycled no prematurely, only when they can no longer be used or reused by anyone else. )
 
-.footnote[David Franquesa - david.franquesa@ac.upc.edu [UPC-Technical University of Catalonia](https://www.upc.edu) and [Electronic Reuse - ereuse.org](http://www.ereuse.org)]
-
+.footnote[[Electronic Reuse - ereuse.org](http://www.ereuse.org) hello@ereuse.org]
 
 
 ---
